@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ReviewsSites.Models.Reviews>
 @{
     Layout = null;
 }
@@ -10,6 +10,21 @@
     <meta name="viewport" content="width=device-width" />
     <title>Reviews</title>
 </head>
+
 <body>
+    <header>
+        
+    </header>
+    <h1>
+        Beer List
+    </h1>
+
+    <ol>
+       @foreach (var Reviews in Model)
+       {
+           <li>@Reviews.Beer</li>
+       }
+    </ol>
+
 </body>
 </html>
