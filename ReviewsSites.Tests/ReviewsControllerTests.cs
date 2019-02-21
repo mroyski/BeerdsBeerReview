@@ -1,10 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ReviewsSites.Controllers;
 using ReviewsSites.ReviewsRepositories;
-using System;
 using Xunit;
-using ReviewsSites.Models;
-using System.Collections.Generic;
 
 namespace ReviewsSites.Tests
 {
@@ -22,10 +19,8 @@ namespace ReviewsSites.Tests
         public void Reviews_Repository_Has_Three_Beers()
         {
             var underTest = new ReviewsRepository();
-            
-
-
-            
+            var result = underTest.reviewList.Count;
+            Assert.Equal(3, result);
         }
     }
 }
