@@ -10,7 +10,7 @@ namespace ReviewsSites.Controllers
     {
         public ViewResult Index()
         {
-            throw new NotImplementedException();
+            return View();
         }
 
     }
