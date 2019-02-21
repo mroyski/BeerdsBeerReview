@@ -8,7 +8,10 @@ namespace ReviewsSites.Controllers
 {
     public class ReviewsController : Controller
     {
-
+        public ViewResult Index()
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }
