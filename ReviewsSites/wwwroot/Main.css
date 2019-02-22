@@ -1,0 +1,75 @@
+﻿* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(images/beer06.jpg);
+    background-size: cover;
+    background-position-x: 8rem;
+}
+
+
+body {
+    font-family: 'Norican', cursive;
+    margin-left: 190px;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 5rem;
+}
+
+    .sidenav a {
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        display: block;
+    }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+    .sidenav p {
+        font-family: 'Reem Kufi', sans-serif;
+        margin: 2rem 1rem;
+    }
+
+#mug {
+    color: gold;
+    font-size: 5rem;
+}
+
+#beerReview {
+    text-align: center;
+    font-size: 11rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+#beerChoice {
+    margin-left: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+#subHead {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
