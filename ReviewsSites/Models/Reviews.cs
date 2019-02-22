@@ -11,5 +11,6 @@ namespace ReviewsSites.Models
         public string Beer { get; set; }
         public float Rating { get; set; }
         public string Description { get; set; }
+        public string ImgPath { get; set; }
     }
 }

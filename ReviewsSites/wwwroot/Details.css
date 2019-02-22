@@ -1,0 +1,73 @@
+﻿* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(images/Bar05.jpg);
+    background-size: cover;
+    background-position-y: -18rem;
+}
+
+body {
+    font-family: 'Reem Kufi', sans-serif;
+    margin-left: 190px;
+}
+
+.sidenav {
+    font-family: 'Norican', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 5rem;
+}
+
+    .sidenav a {
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        display: block;
+    }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+    .sidenav p {
+        font-family: 'Reem Kufi', sans-serif;
+        margin: 2rem 1rem;
+    }
+
+#mug {
+    color: gold;
+    font-size: 5rem;
+}
+
+.beerDetails {
+    display: flex;
+    justify-content: space-around;
+}
+
+.beerPicture {
+    transform: scale(1.5,1.5);
+}
+
+.beerDescription {
+
+}
