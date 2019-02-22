@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ReviewsSites.Controllers;
+using ReviewsSites.Models;
 using ReviewsSites.ReviewsRepositories;
 using Xunit;
 
@@ -22,5 +23,18 @@ namespace ReviewsSites.Tests
             var result = underTest.reviewList.Count;
             Assert.Equal(3, result);
         }
+
+        [Fact]
+        public void Details_returns_correct_Id()
+        {
+            var underTest = new ReviewsController();
+            var expectedId = 2;
+            var results = underTest.Details(expectedId);
+            var model = (Reviews)results.Model;
+            Assert.Equal(2, model.Id);
+        }
+
+
+
     }
 }

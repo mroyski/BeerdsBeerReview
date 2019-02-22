@@ -1,4 +1,4 @@
-﻿
+﻿@model ReviewsSites.Models.Reviews
 @{
     Layout = null;
 }
@@ -11,5 +11,7 @@
     <title>Details</title>
 </head>
 <body>
+    @Model.Beer @Model.Rating @Model.Description
+    <a href="/Reviews/Index">Return back to home</a>
 </body>
 </html>

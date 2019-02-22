@@ -21,5 +21,12 @@ namespace ReviewsSites.Controllers
             return View(model);
         }
 
+        public ViewResult Details(int id)
+        {
+            var model = reviewRepo.GetById(id);
+            return View(model);
+        }
+
+
     }
 }

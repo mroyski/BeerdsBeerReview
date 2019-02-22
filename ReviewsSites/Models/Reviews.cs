@@ -9,5 +9,7 @@ namespace ReviewsSites.Models
     {
         public int Id { get; set; }
         public string Beer { get; set; }
+        public float Rating { get; set; }
+        public string Description { get; set; }
     }
 }
