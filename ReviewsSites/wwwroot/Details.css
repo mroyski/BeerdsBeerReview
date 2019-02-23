@@ -3,11 +3,6 @@
     padding: 0 0 0 0;
 }
 
-* {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
 html {
     display: flex;
     justify-content: center;
@@ -62,6 +57,7 @@ body {
 .beerDetails {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .beerPicture {
