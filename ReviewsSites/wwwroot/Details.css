@@ -4,8 +4,6 @@
 }
 
 html {
-    display: flex;
-    justify-content: center;
     background-repeat: no-repeat;
     background-image: url(images/Bar05.jpg);
     background-size: cover;
@@ -13,13 +11,13 @@ html {
 }
 
 body {
+    display: flex;
     font-family: 'Reem Kufi', sans-serif;
-    margin-left: 190px;
 }
 
 .sidenav {
-    font-family: 'Norican', cursive;
     display: flex;
+    font-family: 'Norican', cursive;
     flex-direction: column;
     text-align: center;
     height: 100%;
@@ -55,9 +53,13 @@ body {
 }
 
 .beerDetails {
+    margin-left: 190px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    flex-grow: 1;
 }
 
 .beerPicture {
@@ -65,5 +67,8 @@ body {
 }
 
 .beerDescription {
-
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    text-align: center;
 }
