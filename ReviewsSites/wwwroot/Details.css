@@ -7,6 +7,7 @@ html {
     font-family: 'Raleway', sans-serif;
     background-repeat: no-repeat;
     background-image: url(/Images/Bar05.jpg);
+    background-position-y: -18rem;
     background-size: cover;
 }
 
@@ -81,8 +82,10 @@ body {
     flex-grow: 1;
 }
 
-.beerPicture {
-    transform: scale(1.5,1.5);
+.beerPicture img {
+    margin-left: 3rem;
+    height: 500px;
+    width: auto;
 }
 
 .beerDescription {
