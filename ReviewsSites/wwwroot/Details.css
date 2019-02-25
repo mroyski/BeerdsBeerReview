@@ -4,20 +4,19 @@
 }
 
 html {
+    font-family: 'Raleway', sans-serif;
     background-repeat: no-repeat;
-    background-image: url(images/Bar05.jpg);
+    background-image: url(/Images/Bar05.jpg);
     background-size: cover;
-    background-position-y: -18rem;
 }
 
 body {
     display: flex;
-    font-family: 'Reem Kufi', sans-serif;
 }
 
 .sidenav {
+    line-height: 1.5rem;
     display: flex;
-    font-family: 'Norican', cursive;
     flex-direction: column;
     text-align: center;
     height: 100%;
@@ -32,6 +31,7 @@ body {
 }
 
     .sidenav a {
+        font-family: 'Norican', cursive;
         text-decoration: none;
         font-size: 25px;
         color: gold;
@@ -43,7 +43,6 @@ body {
         }
 
     .sidenav p {
-        font-family: 'Reem Kufi', sans-serif;
         margin: 2rem 1rem;
     }
 
@@ -52,7 +51,26 @@ body {
     font-size: 5rem;
 }
 
+.mugs {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+}
+
+#mugReview {
+    color: gold;
+    font-size: 2.5rem;
+}
+
+#mugReview1 {
+    color: saddlebrown;
+    font-size: 2.5rem;
+}
+
 .beerDetails {
+    font-family: 'Raleway', sans-serif;
     background-color: rgba(255, 255, 255, 0.418);
     margin-left: 190px;
     display: flex;
@@ -68,8 +86,15 @@ body {
 }
 
 .beerDescription {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    line-height: 2rem;
     display: flex;
     flex-direction: column;
     max-width: 30rem;
     text-align: center;
 }
+
+
+

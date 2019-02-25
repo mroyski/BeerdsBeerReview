@@ -8,8 +8,8 @@
 
 <html>
 <head>
-    <link href="~/Main.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Norican|Reem+Kufi|Teko" rel="stylesheet">
+    <link href="~/Index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width" />
     <title>Beerds</title>
@@ -20,12 +20,14 @@
     <h1 id="beerReview">Beerds</h1>
     <h2 id="subHead">Beer Review Hub</h2>
 
-    <ol>
+    <div id="mainList">
+    <ul>
         @foreach (var Reviews in Model)
         {
-            <li><a href="/Reviews/Details/@Reviews.Id">@Reviews.Beer</a></li>
+            <li><a href="/Reviews/Details/@Reviews.Id">@Reviews.Beer</a><br /><img src="@Reviews.ImgPath" /></li>
         }
-    </ol>
+    </ul>
+        </div>
 
 </body>
 

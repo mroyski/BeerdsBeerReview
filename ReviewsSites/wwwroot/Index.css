@@ -4,21 +4,51 @@
 }
 
 html {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
-    background-image: url(images/beer06.jpg);
+    background-image: url('images/beer06.jpg');
     background-size: cover;
     background-position-x: 8rem;
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.418);
-    font-family: 'Norican', cursive;
     margin-left: 190px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 65rem;
 }
 
+h1, h2 {
+    font-family: 'Norican', cursive;
+}
+
+h1 {
+    color: gold;
+}
+
+#mainList {
+    text-decoration: none;
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    text-decoration: none;
+}
+
+    #mainList ul {
+        list-style: none;
+    }
+
+    #mainList li {
+        display: inline-block;
+    }
+
+    #mainList a {
+        text-decoration: none;
+    }
+
 .sidenav {
+    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -34,6 +64,7 @@ body {
 }
 
     .sidenav a {
+        font-family: 'Norican', cursive;
         text-decoration: none;
         font-size: 25px;
         color: gold;
@@ -45,7 +76,6 @@ body {
         }
 
     .sidenav p {
-        font-family: 'Reem Kufi', sans-serif;
         margin: 2rem 1rem;
     }
 
@@ -57,7 +87,6 @@ body {
 #beerReview {
     text-align: center;
     font-size: 11rem;
-    color: white;
     text-shadow: 2px 2px 3px black;
 }
 
@@ -68,8 +97,9 @@ body {
 }
 
 #subHead {
+    font-family: 'Norican', cursive;
     text-align: center;
     font-size: 3rem;
-    color: white;
+    color: lightblue;
     text-shadow: 2px 2px 3px black;
 }

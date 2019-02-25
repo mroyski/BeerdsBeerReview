@@ -7,29 +7,41 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
     <link href="~/Details.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Norican|Reem+Kufi|Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
     <title>Details</title>
 </head>
+
 <body>
     <div class="beerDetails">
-    <div class="beerDescription">
-        <h1>@Model.Beer</h1>
-        <h3>@Model.Rating</h3>
-        <p class="descriptionTxt">@Model.Description</p>
-        <a href="/Reviews/Index">Return to list</a>
-    </div>
-    <div class="beerPicture">
-        <img src="@Model.ImgPath" />
-    </div>
+        <div class="beerDescription">
+            <h1>@Model.Beer</h1>
+            <h3>by @Model.Brewery</h3>
+            <h3>@Model.Abv  ABV</h3>
+            <h3>Rating: @Model.Rating</h3>
+
+            <div class="mugs">
+                <i id="mugReview" class="fas fa-beer"></i>
+                <i id="mugReview" class="fas fa-beer"></i>
+                <i id="mugReview" class="fas fa-beer"></i>
+                <i id="mugReview" class="fas fa-beer"></i>
+                <i id="mugReview1" class="fas fa-beer"></i>
+            </div>
+
+            <p class="descriptionTxt">@Model.Description</p>
         </div>
+        <div class="beerPicture">
+            <img src="@Model.ImgPath" />
+        </div>
+    </div>
 </body>
 <div class="sidenav">
     <i id="mug" class="fas fa-beer"></i>
     <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="/Reviews/Index">Return to list</a>
 </div>
 </html>
