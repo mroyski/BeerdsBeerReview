@@ -21,21 +21,22 @@
     <h2 id="subHead">Beer Review Hub</h2>
 
     <div id="mainList">
-    <ul>
-        @foreach (var Reviews in Model)
-        {
-            <li><a href="/Reviews/Details/@Reviews.Id">@Reviews.Beer</a><br /><img src="@Reviews.ImgPath" /></li>
-        }
-    </ul>
-        </div>
+        <ul>
+            @foreach (var Reviews in Model)
+            {
+                <li><a href="/Reviews/Details/@Reviews.Id">@Reviews.Beer</a><br /><img src="@Reviews.ImgPath" /></li>
+            }
+        </ul>
+    </div>
+
+    <div class="sidenav">
+        <i id="mug" class="fas fa-beer"></i>
+        <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
 
 </body>
 
-<div class="sidenav">
-    <i id="mug" class="fas fa-beer"></i>
-    <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</div>
 
 </html>

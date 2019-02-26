@@ -10,9 +10,9 @@ namespace ReviewsSites.Controllers
     public class ReviewsController : Controller
     {
         ReviewsRepository reviewRepo;
-        public ReviewsController()
+        public ReviewsController(ReviewsRepository reviewRepo)
         {
-            reviewRepo = new ReviewsRepository();
+            this.reviewRepo = reviewRepo;
         }
 
         public ViewResult Index()
