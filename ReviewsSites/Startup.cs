@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using ReviewsSites.Repositories;
 using ReviewsSites.ReviewsRepositories;
 
 namespace ReviewsSites
@@ -19,6 +20,7 @@ namespace ReviewsSites
             services.AddMvc();
             services.AddDbContext<ReviewsContext>();
             services.AddScoped<ReviewsRepository, ReviewsRepository>();
+            services.AddScoped<CategoryRepository, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
