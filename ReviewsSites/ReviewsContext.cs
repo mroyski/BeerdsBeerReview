@@ -10,6 +10,7 @@ namespace ReviewsSites
     public class ReviewsContext : DbContext
     {
         public DbSet<Reviews> Review { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
