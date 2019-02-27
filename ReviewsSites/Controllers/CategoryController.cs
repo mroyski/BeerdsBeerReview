@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReviewsSites.Controllers
 {
-    public class HomeController : Controller
+    public class CategoryController : Controller
     {
     }
 }
