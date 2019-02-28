@@ -10,8 +10,6 @@ namespace ReviewsSites.Models
     {
         public int Id { get; set; }
         public string Style { get; set;}
-        //public int ReviewsId { get; set; }
-
     }
 
 }

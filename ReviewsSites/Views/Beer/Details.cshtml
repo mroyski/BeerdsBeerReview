@@ -1,4 +1,4 @@
-﻿@model ReviewsSites.Models.Reviews
+﻿@model ReviewsSites.Models.Beer
 @{
     Layout = null;
 }
@@ -17,7 +17,7 @@
 <body>
     <div class="beerDetails">
         <div class="beerDescription">
-            <h1>@Model.Beer</h1>
+            <h1>@Model.Name</h1>
             <h3>by @Model.Brewery</h3>
             <h3>@Model.Abv  ABV</h3>
             <h3>Rating: @Model.Rating</h3>
@@ -41,7 +41,7 @@
         <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="/Reviews/Index">Return to list</a>
+        <a href="/Beer/Index">Return to list</a>
     </div>
 
 </body>

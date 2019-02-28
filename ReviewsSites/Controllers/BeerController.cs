@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace ReviewsSites.Controllers
 {
-    public class ReviewsController : Controller
+    public class BeerController : Controller
     {
-        ReviewsRepository reviewRepo;
-        public ReviewsController(ReviewsRepository reviewRepo)
+        BeerRepository beerRepo;
+        public BeerController(BeerRepository beerRepo)
         {
-            this.reviewRepo = reviewRepo;
+            this.beerRepo = beerRepo;
         }
 
         public ViewResult Index()
         {
-            var model = reviewRepo.GetAll();
+            var model = beerRepo.GetAll();
             return View(model);
         }
 
         public ViewResult Details(int id)
         {
-            var model = reviewRepo.GetById(id);
+            var model = beerRepo.GetById(id);
             return View(model);
         }
 

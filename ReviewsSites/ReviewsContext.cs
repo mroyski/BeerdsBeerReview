@@ -9,7 +9,7 @@ namespace ReviewsSites
 {
     public class ReviewsContext : DbContext
     {
-        public DbSet<Reviews> Review { get; set; }
+        public DbSet<Beer> Beers { get; set; }
         public DbSet<Category> Categories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -24,31 +24,31 @@ namespace ReviewsSites
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Reviews>().HasData(
-                 new Reviews()
+            modelBuilder.Entity<Beer>().HasData(
+                 new Beer()
                  {
                      Id = 1,
-                     Beer = "Zombie Dust",
+                     Name = "Zombie Dust",
                      Abv = 6.20f,
                      Brewery = "Three Floyds",
                      Rating = 4.8f,
                      Description = "This intensely hopped and gushing undead Pale Ale will be one’s only respite after the zombie apocalypse. Created with our marvelous friends in the comic industry.",
                      ImgPath = "/Images/Zombiedust.png"
                  },
-                 new Reviews()
+                 new Beer()
                  {
                      Id = 2,
-                     Beer = "Hopslam",
+                     Name = "Hopslam",
                      Abv = 10.00f,
                      Brewery = "Bells",
                      Rating = 4.6f,
                      Description = "Starting with six different hop varietals added to the brew kettle & culminating with a massive dry-hop addition of Simcoe hops, Bell's Hopslam Ale possesses the most complex hopping schedule in the Bell's repertoire. Selected specifically because of their aromatic qualities, these Pacific Northwest varieties contribute a pungent blend of grapefruit, stone fruit and floral notes. A generous malt bill and a solid dollop of honey provide just enough body to keep the balance in check, resulting in a remarkably drinkable rendition of the Double India Pale Ale style.",
                      ImgPath = "/Images/Hopslam.png"
                  },
-                 new Reviews()
+                 new Beer()
                  {
                      Id = 3,
-                     Beer = "Boomsauce",
+                     Name = "Boomsauce",
                      Abv = 7.80f,
                      Brewery = "Lord Hobo",
                      Rating = 3.0f,
@@ -64,6 +64,7 @@ namespace ReviewsSites
 
               });
 
+            base.OnModelCreating(modelBuilder);
         }     
 
 

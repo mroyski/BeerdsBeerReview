@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace ReviewsSites.ReviewsRepositories
 {
-    public class ReviewsRepository
+    public class BeerRepository
     {
         ReviewsContext db;
 
-        public ReviewsRepository(ReviewsContext db)
+        public BeerRepository(ReviewsContext db)
         {
             this.db = db;
         }
-        public IEnumerable<Reviews> GetAll()
+        public IEnumerable<Beer> GetAll()
         {
-            return db.Review.ToList();
+            return db.Beers.ToList();
         }
 
         public object GetById(int id)
         {
-            return db.Review.Single(Reviews => Reviews.Id == id);
+            return db.Beers.Single(Beer => Beer.Id == id);
         }
     }
 }

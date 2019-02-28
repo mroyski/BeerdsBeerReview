@@ -19,7 +19,7 @@ namespace ReviewsSites
         {
             services.AddMvc();
             services.AddDbContext<ReviewsContext>();
-            services.AddScoped<ReviewsRepository, ReviewsRepository>();
+            services.AddScoped<BeerRepository, BeerRepository>();
             services.AddScoped<CategoryRepository, CategoryRepository>();
         }
 
@@ -37,7 +37,7 @@ namespace ReviewsSites
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Reviews}/{action=Index}/{id?}");
+                    template: "{controller=Beer}/{action=Index}/{id?}");
 
         });
         }

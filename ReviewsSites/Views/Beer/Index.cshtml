@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ReviewsSites.Models.Reviews>
+﻿@model IEnumerable<ReviewsSites.Models.Beer>
 
 @{
     Layout = null;
@@ -22,9 +22,9 @@
 
     <div id="mainList">
         <ul>
-            @foreach (var Reviews in Model)
+            @foreach (var Beer in Model)
             {
-                <li><a href="/Reviews/Details/@Reviews.Id">@Reviews.Beer</a><br /><img src="@Reviews.ImgPath" /></li>
+                <li><a href="/Beer/Details/@Beer.Id">@Beer.Name</a><br /><img src="@Beer.ImgPath" /></li>
             }
         </ul>
     </div>

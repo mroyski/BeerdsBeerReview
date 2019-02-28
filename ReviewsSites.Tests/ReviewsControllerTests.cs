@@ -11,7 +11,7 @@ namespace ReviewsSites.Tests
         [Fact]
         public void Index_Returns_A_View_Result()
         {
-            var underTest = new ReviewsController(null);
+            var underTest = new BeerController(null);
             var result = underTest.Index();
             Assert.IsType<ViewResult>(result);
         }
@@ -27,14 +27,12 @@ namespace ReviewsSites.Tests
         [Fact]
         public void Details_returns_correct_Id()
         {
-            var underTest = new ReviewsController(null);
+            var underTest = new BeerController(null);
             var expectedId = 2;
             var results = underTest.Details(expectedId);
-            var model = (Reviews)results.Model;
+            var model = (Beer)results.Model;
             Assert.Equal(2, model.Id);
         }
-
-
 
     }
 }
