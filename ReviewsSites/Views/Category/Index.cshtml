@@ -23,7 +23,7 @@
             <ul>
                 @foreach (var Category in Model)
                 { 
-                    @Category.Style
+                    <li>@Category.Style<img src="@Category.ImgPath" style="height: 200px; width: auto;"/></li>
                 }
             </ul>
         </div>
