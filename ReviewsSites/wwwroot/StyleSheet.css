@@ -72,6 +72,11 @@ a {
     text-decoration: none;
 }
 
+#mug {
+    color: gold;
+    font-size: 5rem;
+}
+
 .sidenav {
     line-height: 1.5rem;
     display: flex;

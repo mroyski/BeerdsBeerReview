@@ -14,6 +14,16 @@ namespace ReviewsSites.Repositories
             this.db = db;
         }
 
+        internal object GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal object GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         //public object GetById(int id)
         //{
         //    return db.Review.Single(Reviews => Reviews.Id == id);
