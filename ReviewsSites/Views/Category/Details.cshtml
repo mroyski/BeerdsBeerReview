@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ReviewsSites.Models.Beer>
+﻿@model IEnumerable<ReviewsSites.Models.Category>
 
 @{
     Layout = null;
@@ -21,9 +21,8 @@
         <p class="MainPageText">Which Style Do You Like?</p>
         <div id="mainList">
             <ul>
-                @foreach (var Beer in Model)
+                @foreach (var Category in Model)
                 {
-                    <li><img src="@Beer.ImgPath" style="height:200px;width:75px;" /><br /><a href="/Reviews/Details/@Beer.Id">@Beer.Name</a><br /></li>
                 }
             </ul>
         </div>

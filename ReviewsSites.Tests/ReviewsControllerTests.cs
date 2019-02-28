@@ -31,7 +31,7 @@ namespace ReviewsSites.Tests
             var expectedId = 2;
             var results = underTest.Details(expectedId);
             var model = (Beer)results.Model;
-            Assert.Equal(2, model.Id);
+            Assert.Equal(2, model.BeerId);
         }
 
     }

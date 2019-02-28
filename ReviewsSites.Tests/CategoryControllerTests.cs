@@ -10,14 +10,14 @@ namespace ReviewsSites.Tests
 {
     public class CategoryControllerTests
     {
-        [Fact]
-        public void Index_Returns_A_View()
-        {
-            var underTest = new CategoryController();
+        //[Fact]
+        //public void Index_Returns_A_View()
+        //{
+        //    var underTest = new CategoryController();
             
 
 
-        }
+        //}
       
     
     }

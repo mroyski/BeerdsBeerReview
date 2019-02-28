@@ -37,7 +37,7 @@ namespace ReviewsSites
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Beer}/{action=Index}/{id?}");
+                    template: "{controller=Category}/{action=Index}/{id?}");
 
         });
         }

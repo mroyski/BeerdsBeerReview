@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ReviewsSites.Models.Beer>
+﻿@model IEnumerable<ReviewsSites.Models.Category>
 
 @{
     Layout = null;
@@ -8,7 +8,7 @@
 
 <html>
 <head>
-    <link href="~/TestCss.css" rel="stylesheet" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width" />
@@ -21,9 +21,9 @@
         <p class="MainPageText">Which Style Do You Like?</p>
         <div id="mainList">
             <ul>
-                @foreach (var Beer in Model)
-                {
-                    <li><img src="@Beer.ImgPath" style="height:200px;width:75px;" /><br /><a href="/Reviews/Details/@Beer.Id">@Beer.Name</a><br /></li>
+                @foreach (var Category in Model)
+                { 
+                    @Category.Style
                 }
             </ul>
         </div>

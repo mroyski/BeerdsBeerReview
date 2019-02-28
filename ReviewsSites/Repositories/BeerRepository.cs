@@ -14,6 +14,7 @@ namespace ReviewsSites.ReviewsRepositories
         {
             this.db = db;
         }
+
         public IEnumerable<Beer> GetAll()
         {
             return db.Beers.ToList();
@@ -21,7 +22,7 @@ namespace ReviewsSites.ReviewsRepositories
 
         public object GetById(int id)
         {
-            return db.Beers.Single(Beer => Beer.Id == id);
+            return db.Beers.Single(Beer => Beer.BeerId == id);
         }
     }
 }

@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReviewsSites;
 
 namespace ReviewsSites.Migrations
 {
     [DbContext(typeof(ReviewsContext))]
-    partial class ReviewsContextModelSnapshot : ModelSnapshot
+    [Migration("20190228192512_RemoveNavigation")]
+    partial class RemoveNavigation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,8 +42,6 @@ namespace ReviewsSites.Migrations
 
                     b.HasKey("BeerId");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("Beers");
 
                     b.HasData(
@@ -68,14 +68,6 @@ namespace ReviewsSites.Migrations
                     b.HasData(
                         new { CategoryId = 1, ImgPath = "/Images/IPA.png", Style = "IPA" }
                     );
-                });
-
-            modelBuilder.Entity("ReviewsSites.Models.Beer", b =>
-                {
-                    b.HasOne("ReviewsSites.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

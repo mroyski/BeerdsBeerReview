@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReviewsSites.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,14 @@ namespace ReviewsSites.Repositories
             this.db = db;
         }
 
-        //public object GetById(int id)
-        //{
-        //    return db.Review.Single(Reviews => Reviews.Id == id);
-        //}
+        public IEnumerable<Category> GetAll()
+        {
+            return db.Categories.ToList();
+        }
+
+        public object GetById(int id)
+        {
+            return db.Categories.Single(Category => Category.CategoryId == id);
+        }
     }
 }
