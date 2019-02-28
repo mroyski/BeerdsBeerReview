@@ -1,0 +1,104 @@
+﻿body {
+    display: grid;
+}
+
+.Background {
+    padding-left: 190px;
+    background-image: url(/Images/beer06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+    .Background h1 {
+        font-size: 120px;
+        text-align: center;
+    }
+
+    .Background h2 {
+        font-size: 60px;
+        text-align: center;
+        color: aliceblue;
+    }
+
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    padding-left: 190px;
+}
+
+.MainPageText {
+    font-size: x-large;
+    font-family: 'Norican', cursive;
+    text-align: center;
+}
+
+.TitleText {
+    grid-column: auto;
+    padding-left: 191px;
+    height: 40vh;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'Norican', cursive;
+}
+
+h1 {
+    color: gold;
+}
+
+
+.mainList {
+    padding-left: 190px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    border-bottom-color: black;
+    border-radius: 10%;
+}
+
+li {
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding-top: 5rem;
+}
+
+    .sidenav a {
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        display: block;
+    }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+    .sidenav p {
+        margin: 2rem 1rem;
+    }

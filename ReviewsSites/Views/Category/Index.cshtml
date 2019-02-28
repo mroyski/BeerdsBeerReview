@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<ReviewsSites.Models.Reviews>
+
 @{
     Layout = null;
 }
@@ -7,9 +8,33 @@
 
 <html>
 <head>
+    <link href="~/TestCss.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width" />
-    <title>Home</title>
+    <title>Beerds</title>
 </head>
+
 <body>
+    <div class="Background"><h1 id="beerReview">Beerds</h1><h2 id="SubTitle">Beer Review Hub</h2></div>
+    <div class="MainPage">
+        <p class="MainPageText">Which Style Do You Like?</p>
+        <div id="mainList">
+            <ul>
+                @foreach (var Reviews in Model)
+                {
+                    <li><img src="@Reviews.ImgPath" style="height:200px;width:75px;" /><br /><a href="/Reviews/Details/@Reviews.Id">@Reviews.Beer</a><br /></li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="sidenav">
+        <i id="mug" class="fas fa-beer"></i>
+        <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
 </body>
+
+
 </html>
