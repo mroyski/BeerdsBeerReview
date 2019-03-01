@@ -23,7 +23,7 @@
             <ul>
                 @foreach (var Category in Model)
                 { 
-                    <li><a href="/Category/Details/@Category.CategoryId">Press Here</a><img src="@Category.ImgPath" style="height: 200px; width: auto;"/></li>
+                <li><a href="/Category/Details/@Category.CategoryId"><div>Click for IPAs</div></a><img src="@Category.ImgPath" style="height: 200px; width: auto;" /></li>
                 }
             </ul>
         </div>
