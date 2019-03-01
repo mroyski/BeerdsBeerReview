@@ -29,7 +29,8 @@ namespace ReviewsSites
                 {
                     CategoryId = 1,
                     Style = "IPA",
-                    ImgPath = "/Images/IPA.png"
+                    ImgPath = "/Images/IPA.png",
+                    DetailDescription = "Characterized by floral, fruity, citrus-like, piney or resinous American-variety hop character, the IPA beer style is all about hop flavor, aroma and bitterness. This has been the most-entered category at the Great American Beer Festival for more than a decade, and is the top-selling craft beer style in supermarkets and liquor stores across the U.S."
                 });
 
             modelBuilder.Entity<Beer>().HasData(

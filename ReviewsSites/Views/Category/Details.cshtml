@@ -18,13 +18,15 @@
 <body>
     <div class="Category"><img src="@Model.ImgPath" style="height: 300px; width: auto;"/></div>
     <div class="MainPage">
-        <p class="MainPageText"></p>
+        <p class="MainPageText">
+            @Model.DetailDescription
+        </p>
         <div id="mainList">       
             <ul>
                 @foreach (var beer in Model.Beers)
                 
                 {
-                <li><img src="@beer.ImgPath" style="height: 200px; width: auto;"/></li>
+                <li><a href="/Beer/Details/@beer.BeerId">@beer.Name</a><br /><img src="@beer.ImgPath" style="height: 200px; width: auto;"/></li>
                 }
             </ul>
         </div>
@@ -34,7 +36,7 @@
         <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="/Beer/Index">Return to list</a>
+        <a href="/Category/Index">Return to list</a>
     </div>
 </body>
 
