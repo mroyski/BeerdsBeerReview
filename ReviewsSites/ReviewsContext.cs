@@ -11,6 +11,7 @@ namespace ReviewsSites
     {
         public DbSet<Beer> Beers { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<UserReview> UserReviews { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -67,6 +68,15 @@ namespace ReviewsSites
                      ImgPath = "/Images/Boomsauce.png",
                      CategoryId = 1
                  });
+
+            modelBuilder.Entity<UserReview>().HasData(
+                new UserReview()
+                {
+                    UserReviewId = 1,
+                    UserRating = 3,
+                    UserText = "This rocks",
+                    BeerId = 1
+                });
 
             base.OnModelCreating(modelBuilder);
         }
