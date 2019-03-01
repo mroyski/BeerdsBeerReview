@@ -20,9 +20,11 @@ namespace ReviewsSites.Repositories
             return db.Categories.ToList();
         }
 
-        public object GetById(int id)
+        public Category GetById(int id)
         {
             return db.Categories.Single(Category => Category.CategoryId == id);
         }
+
+
     }
 }

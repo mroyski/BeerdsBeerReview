@@ -102,3 +102,9 @@ a {
     .sidenav p {
         margin: 2rem 1rem;
     }
+
+#mug {
+    color: gold;
+    font-size: 5rem;
+}
+

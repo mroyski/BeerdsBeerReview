@@ -11,6 +11,8 @@ namespace ReviewsSites.Models
         public int CategoryId { get; set; }
         public string Style { get; set;}
         public string ImgPath { get; set; }
+
+        public virtual IEnumerable<Beer> Beers { get; set; }
     }
 
 }

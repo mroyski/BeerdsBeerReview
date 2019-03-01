@@ -19,13 +19,15 @@
     <div class="Background"><h1 id="beerReview">Beerds</h1><h2 id="SubTitle">Beer Review Hub</h2></div>
     <div class="MainPage">
         <p class="MainPageText">Which Style Do You Like?</p>
-        <div id="mainList">
-            @*<ul>
-                @foreach (var Category in Model)
-                {
+        <div id="mainList">            
+            
+                
 
+                @foreach (var beer in Model.Beers)
+                {
+                    <p>@beer.ImgPath</p>
                 }
-            </ul>*@
+            
         </div>
     </div>
     <div class="sidenav">

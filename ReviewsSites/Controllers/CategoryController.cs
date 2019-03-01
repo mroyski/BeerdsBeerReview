@@ -10,9 +10,12 @@ namespace ReviewsSites.Controllers
     public class CategoryController : Controller
     {
         CategoryRepository catRepo;
+        
+
         public CategoryController(CategoryRepository catRepo)
         {
             this.catRepo = catRepo;
+         
         }
 
         public ViewResult Index()
