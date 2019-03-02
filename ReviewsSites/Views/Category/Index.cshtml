@@ -16,18 +16,19 @@
 </head>
 
 <body>
-    <div class="Background"><h1 id="beerReview">Beerds</h1><h2 id="SubTitle">Beer Review Hub</h2></div>
-    <div class="MainPage">
+    <h1 id="beerReview">Beerds</h1>
+    <h2 id="subHead">Beer Review Hub</h2>
+
+    <div id="mainList">
         <p class="MainPageText">Which Style Do You Like?</p>
-        <div id="mainList">
-            <ul>
-                @foreach (var Category in Model)
-                { 
-                    <li><a href="/Category/Details/@Category.CategoryId">Press Here</a><img src="@Category.ImgPath" style="height: 200px; width: auto;"/></li>
-                }
-            </ul>
-        </div>
+        <ul>
+            @foreach (var Category in Model)
+            {
+                <li><a href="/Category/Details/@Category.CategoryId">@Category.Style<br /><img src="@Category.ImgPath" style="height: 200px; width: auto;" /></a></li>
+            }
+        </ul>
     </div>
+
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
         <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
