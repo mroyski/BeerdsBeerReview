@@ -94,3 +94,7 @@ h1 {
 .MainPageText {
     margin: 1rem 7rem;
 }
+
+hr {
+    margin: 20px 50px;
+}
