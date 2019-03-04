@@ -23,17 +23,20 @@ namespace ReviewsSites.Controllers
         }
 
         [HttpGet]
-        public ViewResult Create()
+        public ViewResult Create(int id)
         {
-            var model = userReviewRepo.GetAll();
-            return View(model);
+            var newUserReview = new UserReview()
+            {
+                BeerId = id
+            };
+            return View(newUserReview);
         }
 
         [HttpPost]
         public ActionResult Create(UserReview userReview)
         {
             userReviewRepo.Create(userReview);
-            return RedirectToAction("Create");
+            return RedirectToAction("../Beer/Details/" + userReview.BeerId);
         }
 
         [HttpGet]

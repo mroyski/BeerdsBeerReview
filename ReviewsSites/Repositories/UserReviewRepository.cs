@@ -17,7 +17,7 @@ namespace ReviewsSites.Repositories
 
         public UserReview GetById(int Id)
         {
-            return db.UserReviews.Single(userReview => userReview.UserReviewId == Id);
+            return db.UserReviews.Single(UserReview => UserReview.UserReviewId == Id);
         }
 
         public IEnumerable<UserReview> GetAll()
@@ -27,6 +27,7 @@ namespace ReviewsSites.Repositories
 
         public void Create(UserReview userReview)
         {
+
             db.UserReviews.Add(userReview);
             db.SaveChanges();
         }
