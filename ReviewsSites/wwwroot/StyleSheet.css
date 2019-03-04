@@ -1,50 +1,23 @@
-﻿body {
-    display: grid;
+﻿* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
-.Background {
-    padding-left: 190px;
-    background-image: url(/Images/beer06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-}
-
-.Category {
-    padding-left: 190px;
-    display: flex;
-    justify-content: center;
-
-}
-
-    .Background h1 {
-        font-size: 120px;
-        text-align: center;
-    }
-
-    .Background h2 {
-        font-size: 60px;
-        text-align: center;
-        color: aliceblue;
-    }
-
-.MainPage {
-    display: flex;
-    flex-direction: column;
-    padding-left: 190px;
-}
-
-.MainPageText {
+html {
     font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('images/beer06.jpg');
+    background-size: cover;
+    background-position-x: 8rem;
 }
 
-.TitleText {
-    grid-column: auto;
-    padding-left: 191px;
-    height: 40vh;
-    justify-content: center;
+body {
+    margin-left: 190px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100vw;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -55,33 +28,35 @@ h1 {
     color: gold;
 }
 
-
-.mainList {
-    padding-left: 190px;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    border-bottom-color: black;
-    border-radius: 10%;
-}
-
-li {
-    
-    background-color: gold;
-    background-position: center;
-    height: 200px;
-    width: 200px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
-
-a {
+#mainList {
+    padding: 2rem 0;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    display: grid;
     text-decoration: none;
 }
+
+    #mainList ul {
+        background-color: white;
+        list-style: none;
+        grid-gap: 1px;
+    }
+
+    #mainList li {
+        margin: 1rem 2rem;
+        display: inline-block;
+        grid-gap: 1px;
+    }
+
+    #mainList a {
+        text-decoration: none;
+    }
+
+    #mainList img {
+        height: 100px;
+        width: auto;
+    }
 
 .sidenav {
     line-height: 1.5rem;
@@ -95,6 +70,7 @@ a {
     top: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
     padding-top: 5rem;
 }
 
@@ -119,3 +95,27 @@ a {
     font-size: 5rem;
 }
 
+#beerReview {
+    text-align: center;
+    font-size: 11rem;
+    text-shadow: 2px 2px 3px black;
+}
+
+#beerChoice {
+    margin-left: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+#subHead {
+    margin-bottom: 3rem;
+    font-family: 'Norican', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: lightblue;
+    text-shadow: 2px 2px 3px black;
+}
+
+hr {
+    margin: 20px 50px;
+}
