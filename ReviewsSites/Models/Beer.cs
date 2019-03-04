@@ -19,5 +19,6 @@ namespace ReviewsSites.Models
 
         public virtual IEnumerable<UserReview> UserReviews { get; set; }
 
+
     }
 }

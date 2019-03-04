@@ -1,4 +1,6 @@
 ﻿@model ReviewsSites.Models.Beer
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
     Layout = null;
 }
@@ -36,6 +38,17 @@
             <img src="@Model.ImgPath" />
         </div>
         <a href="/UserReview/Create/@Model.BeerId">PRESS ME</a>
+    </div>
+    <div class=" UserReviewSection">
+
+        <ul>
+            @foreach (var userReview in Model.UserReviews)
+            {
+                <li>@userReview.UserRating</li>
+                <li>@userReview.UserText</li>
+            }
+        </ul>
+
     </div>
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
