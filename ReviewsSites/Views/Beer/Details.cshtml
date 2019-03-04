@@ -44,8 +44,10 @@
         <ul>
             @foreach (var userReview in Model.UserReviews)
             {
-                <li>@userReview.UserRating</li>
-                <li>@userReview.UserText</li>
+                <li>@userReview.UserRating/5 
+                    <p>@userReview.UserText</p>
+                    <a href="/UserReview/Edit/@userReview.UserReviewId">Edit Review</a>"
+                </li>
             }
         </ul>
 
@@ -63,3 +65,4 @@
 </body>
 
 </html>
+>
