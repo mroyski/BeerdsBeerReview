@@ -32,6 +32,27 @@ namespace ReviewsSites
                     Style = "IPA",
                     ImgPath = "/Images/IPA.png",
                     DetailDescription = "Characterized by floral, fruity, citrus-like, piney or resinous American-variety hop character, the IPA beer style is all about hop flavor, aroma and bitterness. This has been the most-entered category at the Great American Beer Festival for more than a decade, and is the top-selling craft beer style in supermarkets and liquor stores across the U.S."
+                },
+                new Category()
+                {
+                    CategoryId = 2,
+                    Style = "Stout",
+                    ImgPath = "/Images/Stout.png",
+                    DetailDescription = "A stout beer is a dark, sometimes bitter beer that was first commercially produced in the 1730s. The first versions of this drink were from Ireland, where the still most popular stout is produced by Guinness. Yet Guinness is only one of the many companies that produce and market stouts."
+                },
+                new Category()
+                {
+                    CategoryId = 3,
+                    Style = "Lager",
+                    ImgPath = "/Images/lager.png",
+                    DetailDescription = "Pale lager is a very pale - to - golden - colored lager beer with a well attenuated body and a varying degree of noble hop bitterness."
+                },
+                new Category()
+                {
+                    CategoryId = 4,
+                    Style = "Pale Ale",
+                    ImgPath = "/Images/PaleAle.png",
+                    DetailDescription = "Pale lager is a very pale-to-golden-colored lager beer with a well attenuated body and a varying degree of noble hop bitterness."
                 });
 
             modelBuilder.Entity<Beer>().HasData(

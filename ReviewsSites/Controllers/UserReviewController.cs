@@ -64,7 +64,7 @@ namespace ReviewsSites.Controllers
         public ActionResult Edit(UserReview userReview)
         {
             userReviewRepo.Edit(userReview);
-            return RedirectToAction("index");
+            return RedirectToAction("../Beer/Details/" + userReview.BeerId);
         }
 
     }

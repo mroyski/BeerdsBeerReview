@@ -1,7 +1,7 @@
-﻿* {
+﻿/** {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-}
+}*/
 
 html {
     font-family: 'Raleway', sans-serif;
@@ -13,6 +13,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
 }
 
 hr {
@@ -76,7 +77,7 @@ hr {
 
 .beerDetails {
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(255, 255, 255, 0.418);
+    /*background-color: rgba(255, 255, 255, 0.418);*/
     margin-left: 190px;
     display: flex;
     flex-wrap: wrap;
@@ -103,5 +104,22 @@ hr {
     text-align: center;
 }
 
+.UserReviewSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 3px black;
+    padding: 3rem;
+    margin-left: 190px;
+    margin-bottom: 3rem;
+    justify-content: center;
+    background: white;
+}
 
+.UserReviewSection ul {
+    list-style: none;
+}
 
+.UserReviewSection li {
+    padding: 1rem;
+}
