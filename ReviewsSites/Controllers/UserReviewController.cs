@@ -50,7 +50,7 @@ namespace ReviewsSites.Controllers
         public ActionResult Delete(UserReview userReview)
         {
             userReviewRepo.Delete(userReview);
-            return RedirectToAction("Create");
+            return RedirectToAction("../Beer/Index");
         }
 
         [HttpGet]
