@@ -37,18 +37,23 @@
         <div class="beerPicture">
             <img src="@Model.ImgPath" />
         </div>
-        <a href="/UserReview/Create/@Model.BeerId">PRESS ME</a>
     </div>
     <div class=" UserReviewSection">
+
+        <a class="leaveReview" href="/UserReview/Create/@Model.BeerId">Leave a Review</a>
+
+        <h3>Here's what our users have to say...</h3>
 
         <ul>
             @foreach (var userReview in Model.UserReviews)
             {
-                <li>@userReview.UserRating/5 
-                    <p>@userReview.UserText</p>
-                    <a href="/UserReview/Edit/@userReview.UserReviewId">Edit Review</a>"
-                </li>
-            }
+                <li>
+                    @userReview.UserRating/5
+                <p>@userReview.UserText</p>
+                <a href="/UserReview/Edit/@userReview.UserReviewId">Edit Review</a>"
+            </li>
+            <hr />
+        }
         </ul>
 
     </div>
