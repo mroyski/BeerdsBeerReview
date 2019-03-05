@@ -1,7 +1,7 @@
-﻿* {
+﻿/** {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-}
+}*/
 
 html {
     font-family: 'Raleway', sans-serif;
@@ -28,6 +28,11 @@ h1 {
     color: gold;
 }
 
+.MainPageText {
+    font-size: 30px;
+    font-family: 'Norican', cursive;
+}
+
 #mainList {
     padding: 2rem 0;
     background-color: white;
@@ -36,6 +41,8 @@ h1 {
     display: grid;
     text-decoration: none;
 }
+
+
 
     #mainList ul {
         background-color: white;

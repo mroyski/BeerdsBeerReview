@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReviewsSites;
 
 namespace ReviewsSites.Migrations
 {
     [DbContext(typeof(ReviewsContext))]
-    partial class ReviewsContextModelSnapshot : ModelSnapshot
+    [Migration("20190305033019_addedMoreCategories")]
+    partial class addedMoreCategories
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,8 +72,7 @@ namespace ReviewsSites.Migrations
                     b.HasData(
                         new { CategoryId = 1, DetailDescription = "Characterized by floral, fruity, citrus-like, piney or resinous American-variety hop character, the IPA beer style is all about hop flavor, aroma and bitterness. This has been the most-entered category at the Great American Beer Festival for more than a decade, and is the top-selling craft beer style in supermarkets and liquor stores across the U.S.", ImgPath = "/Images/IPA.png", Style = "IPA" },
                         new { CategoryId = 2, DetailDescription = "A stout beer is a dark, sometimes bitter beer that was first commercially produced in the 1730s. The first versions of this drink were from Ireland, where the still most popular stout is produced by Guinness. Yet Guinness is only one of the many companies that produce and market stouts.", ImgPath = "/Images/Stout.png", Style = "Stout" },
-                        new { CategoryId = 3, DetailDescription = "Pale lager is a very pale - to - golden - colored lager beer with a well attenuated body and a varying degree of noble hop bitterness.", ImgPath = "/Images/lager.png", Style = "Lager" },
-                        new { CategoryId = 4, DetailDescription = "Pale lager is a very pale-to-golden-colored lager beer with a well attenuated body and a varying degree of noble hop bitterness.", ImgPath = "/Images/PaleAle.png", Style = "Pale Ale" }
+                        new { CategoryId = 3, DetailDescription = "Pale lager is a very pale-to-golden-colored lager beer with a well attenuated body and a varying degree of noble hop bitterness.", ImgPath = "/Images/lager.png", Style = "Pale Lager" }
                     );
                 });
 
@@ -94,12 +95,7 @@ namespace ReviewsSites.Migrations
                     b.ToTable("UserReviews");
 
                     b.HasData(
-                        new { UserReviewId = 1, BeerId = 1, UserRating = 4, UserText = "This rocks...nuff said ya dig it." },
-                        new { UserReviewId = 2, BeerId = 1, UserRating = 5, UserText = "A very creative beer with a unique, beautiful, and delicious hops profile. Nice dry, balanced base beer with enough malt backbone to support but not crowd the hops, interesting hops profile that showcases both piney, resinous, dank flavors with classic American citrus notes and tropical fruit hops flavors, and a very clean fermentation profile to boot. Extremely drinkable thanks to lower bitterness but no doubt about it, the hops are the belle of the ball. Buy by the case—it’s an excellent example of the style." },
-                        new { UserReviewId = 3, BeerId = 2, UserRating = 3, UserText = "Caramel background, the smallest hint of tropical fruit, lots of pine and citrus. A good example of what it is, but what it is is still a boring, rather one-note IPA." },
-                        new { UserReviewId = 4, BeerId = 2, UserRating = 4, UserText = "Slammed me like a hibbidy bibiddy hop" },
-                        new { UserReviewId = 5, BeerId = 3, UserRating = 1, UserText = "So that's what a hobo tastes like..." },
-                        new { UserReviewId = 6, BeerId = 3, UserRating = 3, UserText = "This is a full-bodied rendition of the style with carbonation at the lower end of the style spectrum, while the alcohol content was quite evident -- contributing to this beer's warming presence. Very true to form, this Double IPA stands tall and should be considered for consumption as a fine example of the style." }
+                        new { UserReviewId = 1, BeerId = 1, UserRating = 3, UserText = "This rocks" }
                     );
                 });
 
