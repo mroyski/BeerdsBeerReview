@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ReviewsSites.Repositories;
 using ReviewsSites.ReviewsRepositories;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,8 @@ namespace ReviewsSites.Controllers
 {
     public class BeerController : Controller
     {
-        BeerRepository beerRepo;
-        public BeerController(BeerRepository beerRepo)
+        IBeerRepository beerRepo;
+        public BeerController(IBeerRepository beerRepo)
         {
             this.beerRepo = beerRepo;
         }
