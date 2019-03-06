@@ -8,7 +8,7 @@
 
 <html>
 <head>
-    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link href="~/CatDetails.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width" />
@@ -16,21 +16,29 @@
 </head>
 
 <body>
-    <div class="Category"><img src="@Model.ImgPath" style="height: 300px; width: auto;"/></div>
+    <header>
+        <i id="mug" class="fas fa-beer"></i>
+        <a href="/Beer/Index">All Beers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </header>
+    <div class="Category">
+     <img src="@Model.ImgPath" />
+    </div>
     <div class="MainPage">
         <p class="MainPageText">
             @Model.DetailDescription
         </p>
-        <div id="mainList">       
+        <div id="mainList">
             <ul>
                 @foreach (var beer in Model.Beers)
-                
+
                 {
-                <li><a href="/Beer/Details/@beer.BeerId">@beer.Name</a><br /><img src="@beer.ImgPath" style="height: 200px; width: auto;"/></li>
+                    <li><a href="/Beer/Details/@beer.BeerId">@beer.Name</a><br /><img src="@beer.ImgPath" style="height: 200px; width: auto;" /></li>
                 }
             </ul>
         </div>
-        
+
     </div>
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
@@ -41,6 +49,9 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
+    <footer>
+        &copy;2019&nbsp;&nbsp;Team 3D
+    </footer>
 </body>
 
 
