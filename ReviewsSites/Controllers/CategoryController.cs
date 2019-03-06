@@ -9,10 +9,10 @@ namespace ReviewsSites.Controllers
 {
     public class CategoryController : Controller
     {
-        CategoryRepository catRepo;
+        ICategoryRepository catRepo;
         
 
-        public CategoryController(CategoryRepository catRepo)
+        public CategoryController(ICategoryRepository catRepo)
         {
             this.catRepo = catRepo;
          
