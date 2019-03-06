@@ -19,8 +19,8 @@ namespace ReviewsSites
         {
             services.AddMvc();
             services.AddDbContext<ReviewsContext>();
-            services.AddScoped<BeerRepository, BeerRepository>();
-            services.AddScoped<CategoryRepository, CategoryRepository>();
+            services.AddScoped<IBeerRepository, BeerRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<UserReviewRepository, UserReviewRepository>();
         }
 

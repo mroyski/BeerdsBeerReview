@@ -1,4 +1,5 @@
 ﻿using ReviewsSites.Models;
+using ReviewsSites.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReviewsSites.ReviewsRepositories
 {
-    public class BeerRepository
+    public class BeerRepository : IBeerRepository
     {
         ReviewsContext db;
 
@@ -20,7 +21,7 @@ namespace ReviewsSites.ReviewsRepositories
             return db.Beers.ToList();
         }
 
-        public object GetById(int id)
+        public Beer GetById(int id)
         {
             return db.Beers.Single(Beer => Beer.BeerId == id);
         }

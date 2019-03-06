@@ -8,7 +8,10 @@ namespace ReviewsSites.Tests
 {
     public class ReviewsControllerTests
     {
-        [Fact]
+      
+      
+
+       /* [Fact]
         public void Index_Returns_A_View_Result()
         {
             var underTest = new BeerController(null);
@@ -33,6 +36,6 @@ namespace ReviewsSites.Tests
             var model = (Beer)results.Model;
             Assert.Equal(2, model.BeerId);
         }
-
+        */
     }
 }

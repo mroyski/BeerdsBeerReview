@@ -1,25 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Xunit;
 using Microsoft.AspNetCore.Mvc;
+using NSubstitute;
 using ReviewsSites.Controllers;
 using ReviewsSites.Models;
-using NSubstitute;
 using ReviewsSites.Repositories;
+using Xunit;
 
 namespace ReviewsSites.Tests
 {
-    public class CategoryControllerTests
+    public class BeerControllerTests
     {
-        CategoryController underTest;
-        private ICategoryRepository repo;
+        BeerController underTest;
+        private IBeerRepository repo;
 
-        public CategoryControllerTests()
+        public BeerControllerTests()
         {
-            repo = Substitute.For<ICategoryRepository>();
+            repo = Substitute.For<IBeerRepository>();
 
-            underTest = new CategoryController(repo);
+            underTest = new BeerController(repo);
         }
 
         [Fact]
@@ -32,11 +32,11 @@ namespace ReviewsSites.Tests
         [Fact]
         public void Index_Model_Is_Expected_Model()
         {
-            var expectedModel = new List<Category>();
+            var expectedModel = new List<Beer>();
             repo.GetAll().Returns(expectedModel);
 
-            var result = underTest.Index(); 
-            var model = (IEnumerable<Category>)result.Model;
+            var result = underTest.Index();
+            var model = (IEnumerable<Beer>)result.Model;
 
             Assert.Equal(expectedModel, model);
         }
@@ -44,14 +44,13 @@ namespace ReviewsSites.Tests
         public void Details_Model_Is_Expected_Model()
         {
             var expectedId = 2;
-            var expectedModel = new Category();
+            var expectedModel = new Beer();
             repo.GetById(expectedId).Returns(expectedModel);
 
             var result = underTest.Details(expectedId);
-            var model = (Category)result.Model;
+            var model = (Beer)result.Model;
 
             Assert.Equal(expectedModel, model);
         }
-
     }
 }
