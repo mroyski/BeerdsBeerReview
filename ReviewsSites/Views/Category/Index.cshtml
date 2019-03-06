@@ -11,20 +11,27 @@
     <link href="~/StyleSheet.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width" />
-    <title>Beerds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome to Beerds, a Unique Beer Review Site</title>
 </head>
 
 <body>
-    <h1 id="beerReview">Beerds</h1>
-    <h2 id="subHead">Beer Review Hub</h2>
-
-    <div id="mainList">
-        <div class="MainPageText">Which Style Do You Like?</div>
+    <header>
+        <i id="mug" class="fas fa-beer"></i>
+        <a href="/Beer/Index">All Beers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </header>
+    <div class="Background">
+        <h1 id="beerReview">Beerds</h1>
+        <h2 id="subHead">Beer Review Hub</h2>
+    </div>
+    <div class="MainPageText">Which Style Do You Consume?</div>
+    <div id="mainList">        
         <ul>
             @foreach (var Category in Model)
             {
-                <li><a href="/Category/Details/@Category.CategoryId">@Category.Style<br /><img src="@Category.ImgPath" style="height: 200px; width: auto; padding: 20px" /></a></li>
+                <li><a href="/Category/Details/@Category.CategoryId">@Category.Style<br /><img src="@Category.ImgPath" @*style="height: 200px; width: auto; padding: 20px" *@ /></a></li>
             }
         </ul>
     </div>
@@ -32,13 +39,20 @@
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
         <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
-
-        <a href="/Beer/Index">All Beers</a>
-        <hr />
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-
+        <div class="NavLinks">
+            <a href="/Beer/Index">All Beers</a>
+            <hr />
+            <div class="ContactInfo">
+                <a href="#about">About</a>
+                <br />
+                <br />
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </div>
+    <footer>
+        &copy;2019&nbsp;&nbsp;Team 3D        
+    </footer>
 </body>
 
 
