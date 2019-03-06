@@ -1,0 +1,86 @@
+﻿* {
+    margin: 0;
+}
+
+@media only screen and (max-width: 736px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 60px;
+        background-color: white;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #mug {
+        color: black;
+        font-size: 40px;
+    }
+
+    header a {
+        text-decoration: none;
+        font-family: 'Norican', cursive;
+        font-size: 25px;
+        color: gold;
+    }
+
+    .Category {
+        display: flex;        
+        justify-content: center;
+        height: 300px;
+        width: 50px;
+    }
+  
+
+    .MainPageText {
+        padding-top: 15px;
+        font-size: 30px;
+        font-family: 'Norican', cursive;
+        text-align: center;
+    }
+     
+    .sidenav {
+        display: none;
+    }
+
+    .NavLinks {
+        display: none;
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        padding-top: 40px;
+    }
+
+        .NavLinks a {
+            display: none;
+            font-family: 'Norican', cursive;
+            text-decoration: none;
+            font-size: 25px;
+            color: gold;
+        }
+
+    .ContactInfo {
+        display: none;
+        padding-top: 180px;
+    }
+
+    .NavLinks a:hover {
+        color: black;
+    }
+
+    .NavLinks p {
+        margin: 2rem 1rem;
+    }
+
+    footer {
+        font-size: 15px;
+        color: aliceblue;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        background-color: black;
+        padding: 10px 10px 10px 10px;
+    }

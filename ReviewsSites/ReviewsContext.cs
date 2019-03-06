@@ -43,16 +43,16 @@ namespace ReviewsSites
                 new Category()
                 {
                     CategoryId = 3,
-                    Style = "Lager",
-                    ImgPath = "/Images/lager.png",
-                    DetailDescription = "Pale lager is a very pale - to - golden - colored lager beer with a well attenuated body and a varying degree of noble hop bitterness."
+                    Style = "Wheat",
+                    ImgPath = "/Images/Wheat-Beer.png",
+                    DetailDescription = "Wheat beer is a beer, usually top-fermented, which is brewed with a large proportion of wheat relative to the amount of malted barley. The two main varieties are Weissbier and Witbier; minor types include Lambic, Berliner Weisse and Gose"
                 },
                 new Category()
                 {
                     CategoryId = 4,
-                    Style = "Pale Ale",
-                    ImgPath = "/Images/PaleAle.png",
-                    DetailDescription = "Pale lager is a very pale-to-golden-colored lager beer with a well attenuated body and a varying degree of noble hop bitterness."
+                    Style = "High ABV",
+                    ImgPath = "/Images/SnakeVenom.png",
+                    DetailDescription = "Strong beers have a special place in many people's hearts, primarily because they involve the delicious fizz of beer with a very powerful alcoholic punch. They get you blitzed without requiring six or more of them per sitting, and that makes them amazing. "
                 });
 
             modelBuilder.Entity<Beer>().HasData(

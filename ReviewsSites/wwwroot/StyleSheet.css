@@ -1,50 +1,59 @@
-﻿/** {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}*/
+﻿* {
+    margin: 0;
+    padding: 0;
+}
 
-html {
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    justify-content: center;
-    background-repeat: no-repeat;
+.Background {
     background-image: url('images/beer06.jpg');
-    background-size: cover;
-    background-position-x: 8rem;
-}
-
-body {
-    margin-left: 190px;
-    background-color: rgba(255, 255, 255, 0.4);
-    width: 100vw;
-    height: 100vh;
-}
-
-h1, h2 {
-    font-family: 'Norican', cursive;
-}
-
-h1 {
-    color: gold;
-}
-
-.MainPageText {
-    font-size: 30px;
-    font-family: 'Norican', cursive;
 }
 
 #mainList {
-    padding: 2rem 0;
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    display: grid;
     text-decoration: none;
 }
 
+@media screen and (min-width: 737px) {
+    
+    .Background {
+    font-family: 'Raleway', sans-serif;    
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position-x: 8rem;    
+    height: 80vh;
+    padding-left: 180px;
+        
+    }
 
+    header {
+        display:none;
+
+    }
+    h1, h2 {
+    font-family: 'Norican', cursive;
+    }
+
+    h1 {
+    color: gold;
+
+    }
+
+    #mainList {
+    padding: 2rem 0;    
+    text-decoration: none;
+    text-align: center;  
+    
+    }
+
+    .MainPageText {
+        padding-top: 15px;
+        font-size: 30px;
+        font-family: 'Norican', cursive;
+        text-align: center;
+        padding-left: 180px;
+    }
 
     #mainList ul {
+        justify-content:center;
+        padding-left: 180px;
         background-color: white;
         list-style: none;
         grid-gap: 1px;
@@ -53,7 +62,7 @@ h1 {
     #mainList li {
         margin: 1rem 2rem;
         display: inline-block;
-        grid-gap: 1px;
+        grid-gap: 1px;       
     }
 
     #mainList a {
@@ -61,68 +70,215 @@ h1 {
     }
 
     #mainList img {
-        height: 100px;
+        height: 200px;
         width: auto;
     }
 
-.sidenav {
+    .sidenav {
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 100%;
-    width: 190px;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
-    padding-top: 5rem;
-}
+    padding-top: 3rem;
+    overflow-y:hidden;
+    padding-bottom: -10px;
+    }
 
-    .sidenav a {
+    .NavLinks {
         font-family: 'Norican', cursive;
         text-decoration: none;
         font-size: 25px;
         color: gold;
-        display: block;
+        padding-top: 40px;
+        
     }
 
-        .sidenav a:hover {
-            color: black;
+        .NavLinks a {
+            font-family: 'Norican', cursive;
+            text-decoration: none;
+            font-size: 25px;
+            color: gold;
         }
 
-    .sidenav p {
-        margin: 2rem 1rem;
+     .ContactInfo{
+        padding-top: 180px;
     }
 
-#mug {
+    .NavLinks a:hover {
+        color: black;
+    }
+
+         .NavLinks p {
+        margin: 2rem 1rem;
+        }
+
+    #mug {
     color: gold;
     font-size: 5rem;
-}
+    }
 
-#beerReview {
+    #beerReview {
     text-align: center;
     font-size: 11rem;
     text-shadow: 2px 2px 3px black;
-}
+    }
 
-#beerChoice {
+    #beerChoice {
     margin-left: 190px;
     display: flex;
     justify-content: center;
-}
+    }
 
-#subHead {
+    #subHead {
     margin-bottom: 3rem;
     font-family: 'Norican', cursive;
     text-align: center;
     font-size: 3rem;
     color: lightblue;
     text-shadow: 2px 2px 3px black;
+    }
+
+    hr {
+    margin: 20px 50px;
+    }
+
+    footer {
+        padding-left:180px;
+        font-size: 15px;
+        color: aliceblue;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        background-color: black;
+    }
 }
 
-hr {
-    margin: 20px 50px;
+@media only screen and (max-width: 736px){
+    .Background {
+        font-family: 'Raleway', sans-serif;
+        background-repeat: no-repeat;        
+        background-size: cover;       
+        background-size: 100%;
+        margin: 0;
+        height: 300px;
+    }
+
+    header {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+        height: 60px;
+        background-color:white;
+        width: 100%;
+        padding-top:10px;
+    }
+
+    #mug {
+        color: black;
+        font-size: 40px;
+    }
+        header a {
+            text-decoration: none;
+            font-family: 'Norican', cursive;
+            font-size: 25px;
+            color:gold;
+        }
+
+    .Background h1, h2 {
+        font-family: 'Norican', cursive;
+        text-align:center;
+    }
+
+    .Background h1 {
+        color: gold;
+        font-size: 50px;
+    }
+
+    .Background h2 {
+        color: aliceblue;
+        font-size: 30px;
+    }
+
+    .MainPageText {
+        padding-top: 15px;
+        font-size: 30px;
+        font-family: 'Norican', cursive;
+        text-align:center;
+    }
+
+    #mainList {
+        padding: 2rem 0;
+        background-color: white;
+        text-decoration: none;
+        text-align: center;  
+        height: 100%;
+    }
+        #mainList li {
+            margin: 1rem 2rem;
+            display: inline-block;
+            grid-gap: 1px;
+                        
+        }
+
+        #mainList a {
+            text-decoration: none;
+        }
+
+        #mainList img {
+            height: 100px;
+            width: auto;
+        }
+    .sidenav {
+
+        display:none;
+        
+    }
+
+    .NavLinks {
+        display:none;
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        padding-top: 40px;
+    }
+
+        .NavLinks a {
+            display:none;
+            font-family: 'Norican', cursive;
+            text-decoration: none;
+            font-size: 25px;
+            color: gold;
+        }
+
+    .ContactInfo {
+        display:none;
+        padding-top: 180px;
+    }
+
+    .NavLinks a:hover {
+        
+        color: black;
+    }
+
+    .NavLinks p {
+        margin: 2rem 1rem;
+    }
+
+    footer{
+        font-size: 15px;
+        color:aliceblue;
+        text-align:center;
+        height: 30px;
+        width: auto;
+        background-color: black;
+    }
 }
