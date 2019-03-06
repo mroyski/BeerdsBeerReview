@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20190227184652_MessingAround.Designer.cs" />
     <Compile Remove="Migrations\20190227193614_MessingAround.cs" />
     <Compile Remove="Migrations\20190227193614_MessingAround.Designer.cs" />
+    <Compile Remove="Migrations\20190306175855_0.cs" />
+    <Compile Remove="Migrations\20190306175855_0.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
