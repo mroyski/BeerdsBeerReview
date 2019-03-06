@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReviewsSites;
 
 namespace ReviewsSites.Migrations
 {
     [DbContext(typeof(ReviewsContext))]
-    partial class ReviewsContextModelSnapshot : ModelSnapshot
+    [Migration("20190306181611_addedSnakeVenom")]
+    partial class addedSnakeVenom
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,7 +73,7 @@ namespace ReviewsSites.Migrations
                         new { CategoryId = 1, DetailDescription = "Characterized by floral, fruity, citrus-like, piney or resinous American-variety hop character, the IPA beer style is all about hop flavor, aroma and bitterness. This has been the most-entered category at the Great American Beer Festival for more than a decade, and is the top-selling craft beer style in supermarkets and liquor stores across the U.S.", ImgPath = "/Images/IPA.png", Style = "IPA" },
                         new { CategoryId = 2, DetailDescription = "A stout beer is a dark, sometimes bitter beer that was first commercially produced in the 1730s. The first versions of this drink were from Ireland, where the still most popular stout is produced by Guinness. Yet Guinness is only one of the many companies that produce and market stouts.", ImgPath = "/Images/Stout.png", Style = "Stout" },
                         new { CategoryId = 3, DetailDescription = "Wheat beer is a beer, usually top-fermented, which is brewed with a large proportion of wheat relative to the amount of malted barley. The two main varieties are Weissbier and Witbier; minor types include Lambic, Berliner Weisse and Gose", ImgPath = "/Images/Wheat-Beer.png", Style = "Wheat" },
-                        new { CategoryId = 4, DetailDescription = "Strong beers have a special place in many people's hearts, primarily because they involve the delicious fizz of beer with a very powerful alcoholic punch. They get you blitzed without requiring six or more of them per sitting, and that makes them amazing. ", ImgPath = "/Images/SnakeVenom.png", Style = "High ABV" }
+                        new { CategoryId = 4, DetailDescription = "Strong beers have a special place in many people's hearts, primarily because they involve the delicious fizz of beer with a very powerful alcoholic punch. They get you blitzed without requiring six or more of them per sitting, and that makes them amazing. ", ImgPath = "/Images/SnakeVenom.jpg", Style = "High ABV" }
                     );
                 });
 

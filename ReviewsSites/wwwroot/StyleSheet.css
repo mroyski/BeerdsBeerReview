@@ -3,18 +3,21 @@
     padding: 0;
 }
 
+.Background {
+    background-image: url('images/beer06.jpg');
+}
 
-@media screen and (min-width: 737px){    
-    /*.body{
-        padding-left:180px;
-    }*/
+#mainList {
+    text-decoration: none;
+}
 
+@media screen and (min-width: 737px) {
+    
     .Background {
     font-family: 'Raleway', sans-serif;    
-    background-repeat: no-repeat;
-    background-image: url('images/beer06.jpg');
+    background-repeat: no-repeat;   
     background-size: cover;
-    background-position-x: 8rem;
+    background-position-x: 8rem;    
     height: 80vh;
     padding-left: 180px;
         
@@ -36,8 +39,8 @@
     #mainList {
     padding: 2rem 0;    
     text-decoration: none;
-    text-align: center;   
-    text-decoration: none;
+    text-align: center;  
+    
     }
 
     .MainPageText {
@@ -85,6 +88,8 @@
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     padding-top: 3rem;
+    overflow-y:hidden;
+    padding-bottom: -10px;
     }
 
     .NavLinks {
@@ -159,8 +164,7 @@
 @media only screen and (max-width: 736px){
     .Background {
         font-family: 'Raleway', sans-serif;
-        background-repeat: no-repeat;
-        background-image: url('images/beer06.jpg');
+        background-repeat: no-repeat;        
         background-size: cover;       
         background-size: 100%;
         margin: 0;
@@ -173,17 +177,18 @@
         justify-content:space-around;
         height: 60px;
         background-color:white;
-        width: 100%;        
+        width: 100%;
+        padding-top:10px;
     }
 
     #mug {
         color: black;
-        font-size: 40px;;
+        font-size: 40px;
     }
         header a {
             text-decoration: none;
             font-family: 'Norican', cursive;
-            font-size: 30px;
+            font-size: 25px;
             color:gold;
         }
 
@@ -213,13 +218,9 @@
         padding: 2rem 0;
         background-color: white;
         text-decoration: none;
-        text-align: center;       
-        text-decoration: none;
+        text-align: center;  
         height: 100%;
-
     }
-
-
         #mainList li {
             margin: 1rem 2rem;
             display: inline-block;
