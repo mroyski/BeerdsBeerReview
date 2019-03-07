@@ -2,9 +2,155 @@
     margin: 0;
     padding: 0;
 }
+.Background {
+    font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat;
+    background-image: url(Images/Bartop.jpg);
+    background-position-y: -18rem;
+    background-size: cover;
+}
 
+header{
+    display: none;
+}
+
+
+#mugReview {
+    color: gold;
+    font-size: 2.5rem;
+}
+
+#mugReview1 {
+    color: saddlebrown;
+    font-size: 2.5rem;
+}
+
+.beerDetails {
+    font-family: 'Raleway', sans-serif;  
+    margin-left: 190px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    
+}
+
+.beerPicture img {
+    margin-left: 3rem;
+    height: 500px;
+    width: auto;
+}
+
+.beerDescription {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    text-align: center;
+}
+
+/*Start color-profile SideNav*/
+.sidenav {
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 3rem;
+    overflow-y: hidden;
+    padding-bottom: -10px;
+}
+
+.NavLinks {
+    font-family: 'Norican', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: gold;
+    padding-top: 40px;
+}
+
+    .NavLinks a {
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+    }
+
+.ContactInfo {
+    padding-top: 180px;
+}
+
+.NavLinks a:hover {
+    color: black;
+}
+
+.NavLinks p {
+    margin: 2rem 1rem;
+}
+
+#mug {
+    color: gold;
+    font-size: 5rem;
+}
+
+hr {
+    margin: 20px 50px;
+}
+
+/*End color-profile aside Nav*/
+
+.UserReviewSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    margin-left: 190px;
+    margin-bottom: 3rem;
+    justify-content: center;
+    background: white;
+}
+
+    /*ADDED*/
+    .UserReviewSection h3 {
+        font-family: 'Norican', cursive;
+        font-size: 2.5rem;
+        color: gold;
+        padding: 1rem;
+    }
+
+/*ADDED*/
+.leaveReview {
+    font-size: 2rem;
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 2rem;
+}
+
+    /*ADDED*/
+    .leaveReview:hover {
+        color: saddlebrown;
+    }
+
+.UserReviewSection ul {
+    list-style: none;
+}
+
+.UserReviewSection li {
+    padding: 1rem;
+}
 @media only screen and (max-width: 736px) {
-
     header {
         display: flex;
         justify-content: space-around;
@@ -28,9 +174,35 @@
         display: none;
     }
 
+    .NavLinks {
+        display: none;
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        padding-top: 40px;
+    }
+
+        .NavLinks a {
+            display: none;
+            font-family: 'Norican', cursive;
+            text-decoration: none;
+            font-size: 25px;
+            color: gold;
+        }
+
+    .ContactInfo {
+        display: none;
+        padding-top: 180px;
+    }
+
     .beerDetails {
-        padding: 20px;
-        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        margin-left: 190px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
     }
 
     .UserReviewSection{
@@ -46,4 +218,5 @@
         background-color: black;
         padding: 10px 10px 10px 10px;
     }
+    
 }
