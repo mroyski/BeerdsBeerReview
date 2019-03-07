@@ -9,45 +9,56 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <link href="~/Create.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit</title>
 </head>
 <body>
 
-    <h4>UserReview</h4>
-    <hr />
-    <div class="row">
-        <div class="col-md-4">
-            <form asp-action="Edit">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="hidden" asp-for="UserReviewId" />
-                <div class="form-group">
-                    <label asp-for="UserRating" class="control-label"></label>
-                    <input asp-for="UserRating" class="form-control" />
-                    <span asp-validation-for="UserRating" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="UserText" class="control-label"></label>
-                    <input asp-for="UserText" class="form-control" />
-                    <span asp-validation-for="UserText" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    @*<label asp-for="BeerId" class="control-label"></label>
-                    <select asp-for="BeerId" class="form-control" asp-items="ViewBag.BeerId"></select>
-                    <span asp-validation-for="BeerId" class="text-danger"></span>*@
-                    <input asp-for="BeerId" type="hidden" class="form-control" placeholder="@Model.BeerId"/>
-
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-default"/>
-                </div>
-            </form>
+    <h1>Editing Review</h1>
+    <div class="container">
+        <fieldset>
+            <legend>Your Review</legend>
+            <p>Rating</p>
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        @*<label asp-for="UserRating" class="control-label"></label>*@
+                        <input asp-for="UserRating" class="form-control" id="ratingSelector" />
+                        <span asp-validation-for="UserRating" class="text-danger"></span>
+                    </div>
+                    <p>Tell us more...</p>
+                    <div class="form-group">
+                        @*<label asp-for="UserText" class="control-label"></label>*@
+                        <textarea asp-for="UserText" type="text" class="form-control" id="textForUser"></textarea>
+                        <span asp-validation-for="UserText" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="BeerId" type="hidden" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </fieldset>
+    </div>
+    <div class="sidenav">
+        <i id="mug" class="fas fa-beer"></i>
+        <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
+        <div class="NavLinks">
+            <a href="/Beer/Index">All Beers</a>
+            <hr />
+            <div class="ContactInfo">
+                <a href="#about">About</a>
+                <br />
+                <br />
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </div>
-
-    <div>
-        <a asp-action="Index">Back to List</a>
-    </div>
-
 </body>
 </html>

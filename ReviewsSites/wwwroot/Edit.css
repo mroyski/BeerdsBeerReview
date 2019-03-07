@@ -1,0 +1,94 @@
+﻿body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 190px;
+}
+
+h1 {
+    font-family: 'Norican', cursive;
+}
+
+.container {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+#textForUser {
+    margin: 2rem auto;
+    display: flex;
+    width: 28rem;
+    min-height: 6rem;
+}
+
+fieldset {
+    background-color: rgba(128, 128, 128, 0.096);
+}
+
+form {
+    width: 40rem;
+}
+
+legend {
+    background-color: white;
+}
+
+#ratingSelector {
+    width: 2rem;
+}
+
+.sidenav {
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 3rem;
+    overflow-y: hidden;
+    padding-bottom: -10px;
+    /*border-right: solid;
+    border-color: gray;*/
+}
+
+.NavLinks {
+    font-family: 'Norican', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: gold;
+    padding-top: 40px;
+}
+
+    .NavLinks a {
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+    }
+
+        /*.ContactInfo {
+    padding-top: 180px;
+}*/
+
+        .NavLinks a:hover {
+            color: black;
+        }
+
+    .NavLinks p {
+        margin: 2rem 1rem;
+    }
+
+#mug {
+    color: gold;
+    font-size: 5rem;
+}
+
+hr {
+    margin: 20px 50px;
+}
