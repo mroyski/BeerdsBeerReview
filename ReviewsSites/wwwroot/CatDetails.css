@@ -1,16 +1,130 @@
 ﻿* {
     margin: 0;
+    padding: 0;
 }
 
+@media screen and (min-width: 737px){
+
+    header {
+        display: none;
+    }
+
+    .Category {
+        padding-left: 180px;
+        text-align: center;
+    }
+
+    .MainPageText {
+        padding-top: 15px;
+        font-size: 20px;
+        font-family: 'Norican', cursive;
+        text-align: center;
+        padding-left: 180px;
+    }
+
+    #mainList ul {
+        justify-content: center;
+        background-color: white;
+        list-style: none;
+        grid-gap: 1px;
+        text-align: center;
+        padding-left: 180px;
+        padding-bottom: 50px;
+    }
+
+    #mainList li {
+        margin: 1rem 2rem;
+        display: inline-block;
+        grid-gap: 1px;
+        padding: 20px;
+    }
+
+    #mainList a {
+        text-decoration: none;
+    }
+
+    #mainList img {
+        height: 200px;
+        width: auto;
+    }
+
+    .sidenav {
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        width: 180px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        padding-top: 3rem;
+        overflow-y: hidden;
+        padding-bottom: -10px;
+        border-right:solid;
+        border-color: gray;
+
+    }
+
+    .NavLinks {
+        font-family: 'Norican', cursive;
+        text-decoration: none;
+        font-size: 25px;
+        color: gold;
+        padding-top: 40px;
+    }
+
+        .NavLinks a {
+            font-family: 'Norican', cursive;
+            text-decoration: none;
+            font-size: 25px;
+            color: gold;
+        }
+
+    .ContactInfo {
+        padding-top: 180px;
+    }
+
+    .NavLinks a:hover {
+        color: black;
+    }
+
+    .NavLinks p {
+        margin: 2rem 1rem;
+    }
+
+    #mug {
+        color: gold;
+        font-size: 5rem;
+    }
+
+    hr {
+        margin: 20px 50px;
+    }
+
+    footer {
+        padding-left: 180px;
+        font-size: 15px;
+        color: aliceblue;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        background-color: black;
+        padding-top: 20px;
+    }
+
+
+} 
+
 @media only screen and (max-width: 736px) {
-    
+
     header {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         height: 60px;
-        background-color: white;
-        width: 100%;
         padding-top: 10px;
     }
 
@@ -27,20 +141,39 @@
     }
 
     .Category {
-        display: flex;        
-        justify-content: center;
-        height: 300px;
-        width: 50px;
+        text-align: center;
     }
-  
 
     .MainPageText {
         padding-top: 15px;
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Norican', cursive;
         text-align: center;
     }
-     
+
+    #mainList ul {
+        justify-content: center;
+        background-color: white;
+        list-style: none;
+        grid-gap: 1px;
+        text-align: center;
+    }
+
+    #mainList li {
+        margin: 1rem 2rem;
+        display: inline-block;
+        grid-gap: 1px;
+    }
+
+    #mainList a {
+        text-decoration: none;
+    }
+
+    #mainList img {
+        height: 200px;
+        width: auto;
+    }
+
     .sidenav {
         display: none;
     }
@@ -84,3 +217,4 @@
         background-color: black;
         padding: 10px 10px 10px 10px;
     }
+}

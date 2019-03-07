@@ -23,7 +23,7 @@
         <a href="#contact">Contact</a>
     </header>
     <div class="Category">
-     <img src="@Model.ImgPath" />
+     <img src="@Model.ImgPath" style="height: 300px; width: auto"/>
     </div>
     <div class="MainPage">
         <p class="MainPageText">
@@ -43,11 +43,16 @@
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
         <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
-        <a href="/Category/Index">All Styles</a>
-        <a href="/Beer/Index">All Beers</a>
-        <hr />
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="NavLinks">
+            <a href="/Beer/Index">All Beers</a>
+            <hr />
+            <div class="ContactInfo">
+                <a href="#about">About</a>
+                <br />
+                <br />
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </div>
     <footer>
         &copy;2019&nbsp;&nbsp;Team 3D

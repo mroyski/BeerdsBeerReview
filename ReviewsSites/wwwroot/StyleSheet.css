@@ -43,11 +43,15 @@
     
     }
 
+    .MainPage{
+        padding-left: 180px;
+    }
+
     .MainPageText {
         padding-top: 15px;
         font-size: 30px;
         font-family: 'Norican', cursive;
-        text-align: center;
+        text-align: center;   
         padding-left: 180px;
     }
 
@@ -151,13 +155,14 @@
     }
 
     footer {
-        padding-left:180px;
+        padding-left: 180px;
         font-size: 15px;
         color: aliceblue;
         text-align: center;
         height: 30px;
         width: auto;
         background-color: black;
+        padding-top: 20px;
     }
 }
 
@@ -280,5 +285,6 @@
         height: 30px;
         width: auto;
         background-color: black;
+        padding-top: 10px;
     }
 }
