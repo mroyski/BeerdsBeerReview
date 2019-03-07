@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReviewsSites;
 
 namespace ReviewsSites.Migrations
 {
     [DbContext(typeof(ReviewsContext))]
-    partial class ReviewsContextModelSnapshot : ModelSnapshot
+    [Migration("20190307203558_AddedAllBeers")]
+    partial class AddedAllBeers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,7 +54,7 @@ namespace ReviewsSites.Migrations
                         new { BeerId = 5, Abv = 5.8f, Brewery = "Sierra Nevada", CategoryId = 2, Description = "Before Sierra Nevada was a reality, our founders brewed beer at home and dreamed of building a brewery one day. Back then, they brewed the beers they wanted to drink—bold and full of flavor. Stouts had always been a favorite, so when we needed a big and rich beer to test out the brewing system at our fledgling brewery, stout was the obvious choice. Thirty years later, not much has changed. We’re still brewing the beers we want to drink and our classic Stout is the same as it’s ever been—big, rich, bold, black as night and filled with the wild-eyed passion of which dreams are made.", ImgPath = "/Images/Sierra_Nevada_Stout.png", Name = "Sierra Nevada Stout", Rating = 4f },
                         new { BeerId = 6, Abv = 10.3f, Brewery = "Surly Brewing Co", CategoryId = 2, Description = "Russian Imperial Stout contains waves of chocolate, coffee, cherry, raisin, and toffee, plus a non-traditional dose of aromatic hops.", ImgPath = "/Images/DarknessStout.png", Name = "Darkness Russian Stout", Rating = 4.5f },
                         new { BeerId = 7, Abv = 5.4f, Brewery = "Coors Brewing Co", CategoryId = 3, Description = "In addition to Coor's refreshingly unique Blue Moon® Belgian White Belgian-Style Wheat Ale, we also offer our collection of flavorful seasonal and limited release beers that reflect Blue Moon’s twist on various beer styles. An appreciation for the creative process and a passion for brewing enable us at Blue Moon Brewing Company® to offer a welcome twist of flavor in our beers that everyone can enjoy.", ImgPath = "/Images/Wheat-Beer.png", Name = "Blue Moon Mango Wheat", Rating = 3.57f },
-                        new { BeerId = 8, Abv = 5.6f, Brewery = "3 Floyds Brewing Co", CategoryId = 3, Description = "An American wheat beer with a refreshing, crisp citrus finish. This delicious session beer is brewed with boatloads of Amarillo hops", ImgPath = "/Images/GumballHeadWheat.png", Name = "GumballHead", Rating = 4.2f },
+                        new { BeerId = 8, Abv = 5.6f, Brewery = "3 Floyds Brewing Co", CategoryId = 3, Description = "An American wheat beer with a refreshing, crisp citrus finish. This delicious session beer is brewed with boatloads of Amarillo hops", ImgPath = "/Images/GummballHeadWheat.png", Name = "GumballHead", Rating = 4.2f },
                         new { BeerId = 9, Abv = 67.5f, Brewery = "BrewMeister", CategoryId = 4, Description = "In certain countries, Brewmeister's Snake Venom beer isn't actually a beer because of hits insanely high ABV. This barley beer has an incredibly high proof that makes it rival, if not exceed, many liquors out there. At around $50 per bottle, this insanely powerful beer will burn a hole in your wallet - and possibly your throat.", ImgPath = "/Images/SnakeVenom.png", Name = "Snake Venom", Rating = 5f },
                         new { BeerId = 10, Abv = 41f, Brewery = "Brew Dog", CategoryId = 4, Description = "It takes a lot to be called one of Scotland's strongest beers, but this high-ABV Imperial IPA definitely does the trick. BrewDog actually made this beer line as a way of showing their brewing prowess and outdoing competitors in the fight to have one of the strongest beers in the world.", ImgPath = "/Images/SinkBismark.png", Name = "Sink The Bismarck", Rating = 5f },
                         new { BeerId = 11, Abv = 29f, Brewery = "Samuel Adams", CategoryId = 4, Description = "Out of all the beers on this list, buying this one is often the easiest and most cost-effective. Sam Adams, after all, is a mainstream beer brand - and it's one of the few mainstream beer brands that's also known for producing special edition batches. ", ImgPath = "/Images/SamAdamsUtopia.png", Name = "Utopias", Rating = 5f }
