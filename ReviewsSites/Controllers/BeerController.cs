@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ReviewsSites.Repositories;
-using ReviewsSites.ReviewsRepositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace ReviewsSites.Controllers
 {

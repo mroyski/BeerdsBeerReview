@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ReviewsSites.Controllers;
-using ReviewsSites.Models;
-using ReviewsSites.ReviewsRepositories;
 using Xunit;
 using NSubstitute;
 using ReviewsSites.Repositories;
-using System.Collections.Generic;
 
 namespace ReviewsSites.Tests
 {
