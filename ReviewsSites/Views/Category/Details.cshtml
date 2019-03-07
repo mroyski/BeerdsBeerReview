@@ -34,7 +34,7 @@
                 @foreach (var beer in Model.Beers)
 
                 {
-                    <li><a href="/Beer/Details/@beer.BeerId">@beer.Name</a><br /><img src="@beer.ImgPath" style="height: 200px; width: auto;" /></li>
+                    <li><a href="/Beer/Details/@beer.BeerId">@beer.Name<br /><img src="@beer.ImgPath" style="height: 200px; width: auto;" /></a></li>
                 }
             </ul>
         </div>
