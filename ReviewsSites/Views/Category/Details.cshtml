@@ -11,8 +11,8 @@
     <link href="~/CatDetails.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width" />
-    <title>Beerds</title>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 />
+    <title>Beerds Categories</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <a href="#contact">Contact</a>
     </header>
     <div class="Category">
-     <img src="@Model.ImgPath" style="height: 300px; width: auto"/>
+     <img src="@Model.ImgPath" style="height: 50vh; width: auto"/>
     </div>
     <div class="MainPage">
         <p class="MainPageText">
@@ -34,7 +34,7 @@
                 @foreach (var beer in Model.Beers)
 
                 {
-                    <li><a href="/Beer/Details/@beer.BeerId">@beer.Name</a><br /><img src="@beer.ImgPath" style="height: 200px; width: auto;" /></li>
+                    <li><a href="/Beer/Details/@beer.BeerId">@beer.Name</a><br /><img src="@beer.ImgPath" style="height: 40vh; width: auto;" /></li>
                 }
             </ul>
         </div>

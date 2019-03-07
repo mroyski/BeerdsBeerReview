@@ -49,7 +49,7 @@
 
     .MainPageText {
         padding-top: 15px;
-        font-size: 30px;
+        font-size: 5vh;
         font-family: 'Norican', cursive;
         text-align: center;   
         padding-left: 180px;
@@ -71,20 +71,17 @@
 
     #mainList a {
         text-decoration: none;
-    }
-
-    #mainList img {
-        height: 200px;
-        width: auto;
+        font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        color: black;
+        font-size: 3vh;
     }
 
     .sidenav {
-    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 100%;
-    width: 180px;
+    width: 12vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -93,13 +90,18 @@
     overflow-x: hidden;
     padding-top: 3rem;
     overflow-y:hidden;
-    padding-bottom: -10px;
+    padding-left: 5px;
+    }
+
+    .sidenav p{
+        font-size: 1.5vw;
+        padding-bottom: 1vh;
     }
 
     .NavLinks {
         font-family: 'Norican', cursive;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 3vw;
         color: gold;
         padding-top: 40px;
         
@@ -107,31 +109,27 @@
 
         .NavLinks a {
             font-family: 'Norican', cursive;
-            text-decoration: none;
-            font-size: 25px;
+            text-decoration: none;            
             color: gold;
         }
 
-     .ContactInfo{
-        padding-top: 180px;
-    }
-
-    .NavLinks a:hover {
+         .NavLinks a:hover {
         color: black;
     }
 
          .NavLinks p {
         margin: 2rem 1rem;
+        font-size: 3vw;
         }
 
     #mug {
     color: gold;
-    font-size: 5rem;
+    font-size: 8vh;
     }
 
     #beerReview {
     text-align: center;
-    font-size: 11rem;
+    font-size: 10vw;
     text-shadow: 2px 2px 3px black;
     }
 
@@ -145,7 +143,7 @@
     margin-bottom: 3rem;
     font-family: 'Norican', cursive;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5vw;
     color: lightblue;
     text-shadow: 2px 2px 3px black;
     }
@@ -235,12 +233,15 @@
 
         #mainList a {
             text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+            color: black;
+            font-size: 3vh;
         }
 
-        #mainList img {
+        /*#mainList img {
             height: 100px;
             width: auto;
-        }
+        }*/
     .sidenav {
 
         display:none;

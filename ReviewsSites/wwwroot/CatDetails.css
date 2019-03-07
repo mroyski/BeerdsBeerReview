@@ -12,31 +12,31 @@
     .Category {
         padding-left: 180px;
         text-align: center;
+        height: 50vh;
     }
 
     .MainPageText {
         padding-top: 15px;
-        font-size: 20px;
-        font-family: 'Norican', cursive;
+        font-size: 20px;       
         text-align: center;
-        padding-left: 180px;
+        padding-left: 190px;       
     }
 
-    #mainList ul {
-        justify-content: center;
-        background-color: white;
+    #mainList ul {     
+        display: flex;
+        justify-content:center;
         list-style: none;
         grid-gap: 1px;
         text-align: center;
         padding-left: 180px;
-        padding-bottom: 50px;
+        padding-bottom: 50px;       
     }
 
     #mainList li {
         margin: 1rem 2rem;
         display: inline-block;
         grid-gap: 1px;
-        padding: 20px;
+        padding: 40px;
     }
 
     #mainList a {
@@ -146,8 +146,7 @@
 
     .MainPageText {
         padding-top: 15px;
-        font-size: 20px;
-        font-family: 'Norican', cursive;
+        font-size: 20px;       
         text-align: center;
     }
 

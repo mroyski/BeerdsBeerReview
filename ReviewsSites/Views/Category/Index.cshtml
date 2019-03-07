@@ -8,10 +8,10 @@
 
 <html>
 <head>
-    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link href="~/CatIndex.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0/>
     <title>Welcome to Beerds, a Unique Beer Review Site</title>
 </head>
 
@@ -31,7 +31,7 @@
         <ul>
             @foreach (var Category in Model)
             {
-                <li><a href="/Category/Details/@Category.CategoryId">@Category.Style<br /><img src="@Category.ImgPath" @*style="height: 200px; width: auto; padding: 20px" *@ /></a></li>
+                <li><a href="/Category/Details/@Category.CategoryId">@Category.Style<br /><img src="@Category.ImgPath" style="height: 30vh; width: auto; padding: 20px" /></a></li>
             }
         </ul>
     </div>
@@ -43,9 +43,7 @@
             <a href="/Beer/Index">All Beers</a>
             <hr />
             <div class="ContactInfo">
-                <a href="#about">About</a>
-                <br />
-                <br />
+                <a href="#about">About</a>                
                 <a href="#contact">Contact</a>
             </div>
         </div>
