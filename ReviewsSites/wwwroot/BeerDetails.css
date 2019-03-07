@@ -1,0 +1,49 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 736px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        padding-top: 10px;
+    }
+
+    #mug {
+        color: black;
+        font-size: 40px;
+    }
+
+    header a {
+        text-decoration: none;
+        font-family: 'Norican', cursive;
+        font-size: 25px;
+        color: gold;
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+    .beerDetails {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .UserReviewSection{
+        text-align: center;
+    }
+
+    footer {
+        font-size: 15px;
+        color: aliceblue;
+        text-align: center;
+        height: 30px;
+        width: auto;
+        background-color: black;
+        padding: 10px 10px 10px 10px;
+    }
+}

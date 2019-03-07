@@ -9,7 +9,7 @@
 
 <html>
 <head>
-    <link href="~/Details.css" rel="stylesheet" />
+    <link href="~/BeerDetails.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width" />
@@ -17,6 +17,12 @@
 </head>
 
 <body>
+    <header>
+        <i id="mug" class="fas fa-beer"></i>
+        <a href="/Beer/Index">All Beers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </header>
     <div class="beerDetails">
         <div class="beerDescription">
             <h1>@Model.Name</h1>
@@ -38,7 +44,7 @@
             <img src="@Model.ImgPath" />
         </div>
     </div>
-    <div class=" UserReviewSection">
+    <div class="UserReviewSection">
 
         <a class="leaveReview" href="/UserReview/Create/@Model.BeerId">Leave a Review</a>
 
@@ -49,14 +55,13 @@
             {
                 <li>
                     @userReview.UserRating/5
-                <p>@userReview.UserText</p>
-                <a href="/UserReview/Edit/@userReview.UserReviewId">Edit Review</a>
-                <a href="/UserReview/Delete/@userReview.UserReviewId">Delete Review</a>
+                    <p>@userReview.UserText</p>
+                    <a href="/UserReview/Edit/@userReview.UserReviewId">Edit Review</a>
+                    <a href="/UserReview/Delete/@userReview.UserReviewId">Delete Review</a>
                 </li>
-            <hr />
-        }
+                <hr />
+            }
         </ul>
-
     </div>
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
@@ -67,6 +72,9 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
+    <footer>
+        &copy;2019&nbsp;&nbsp;Team 3D
+    </footer>
 
 </body>
 
