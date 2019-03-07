@@ -17,7 +17,7 @@
     .MainPageText {
         padding-top: 15px;
         font-size: 20px;
-        font-family: 'Norican', cursive;
+        font-family: 'Raleway', sans-serif;
         text-align: center;
         padding-left: 180px;
     }
@@ -49,6 +49,7 @@
     }
 
     .sidenav {
+        font-family: 'Raleway', sans-serif;
         line-height: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -64,9 +65,8 @@
         padding-top: 3rem;
         overflow-y: hidden;
         padding-bottom: -10px;
-        border-right:solid;
-        border-color: gray;
-
+        /*border-right: solid;
+        border-color: gray;*/
     }
 
     .NavLinks {
@@ -147,7 +147,7 @@
     .MainPageText {
         padding-top: 15px;
         font-size: 20px;
-        font-family: 'Norican', cursive;
+        font-family: 'Raleway', sans-serif;
         text-align: center;
     }
 
@@ -175,6 +175,7 @@
     }
 
     .sidenav {
+        font-family: 'Raleway', sans-serif;
         display: none;
     }
 
