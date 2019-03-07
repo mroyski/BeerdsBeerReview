@@ -21,7 +21,7 @@ namespace ReviewsSites
             services.AddDbContext<ReviewsContext>();
             services.AddScoped<IBeerRepository, BeerRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<UserReviewRepository, UserReviewRepository>();
+            services.AddScoped<IUserReviewRepository, UserReviewRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
