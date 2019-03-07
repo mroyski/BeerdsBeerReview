@@ -10,9 +10,9 @@ namespace ReviewsSites.Controllers
 {
     public class UserReviewController : Controller
     {
-        UserReviewRepository userReviewRepo;
+        IUserReviewRepository userReviewRepo;
 
-        public UserReviewController(UserReviewRepository userReviewRepo)
+        public UserReviewController(IUserReviewRepository userReviewRepo)
         {
             this.userReviewRepo = userReviewRepo;
         }

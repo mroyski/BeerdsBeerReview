@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReviewsSites.Repositories
 {
-    public class UserReviewRepository
+    public class UserReviewRepository : IUserReviewRepository
     {
         ReviewsContext db;
 
