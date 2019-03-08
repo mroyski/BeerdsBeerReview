@@ -46,6 +46,7 @@ namespace ReviewsSites.Controllers
         public ActionResult Delete(UserReview userReview)
         {
             userReviewRepo.Delete(userReview);
+            //return RedirectToAction("Details", "Beer", new { id = userReview.BeerId });
             return RedirectToAction("../Beer/Index/");
         }
 
