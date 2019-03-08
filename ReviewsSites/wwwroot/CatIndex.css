@@ -39,8 +39,7 @@
     #mainList {
     padding: 2rem 0;    
     text-decoration: none;
-    text-align: center;  
-    
+    text-align: center;      
     }
 
     .MainPage{
@@ -75,7 +74,7 @@
         color: black;
         font-size: 3vh;
     }
-    /*Start color-profile SideNav*/
+    /*Start of SideNav*/
     .sidenav {
     display: flex;
     flex-direction: column;
@@ -93,19 +92,18 @@
     padding-left: 5px;
     }
 
-    .sidenav p{
+        .sidenav p{
         font-size: 1.5vw;
         padding-bottom: 1vh;
-    }
+         }
 
-    .NavLinks {
+        .NavLinks {
         font-family: 'Norican', cursive;
         text-decoration: none;
         font-size: 3vw;
         color: gold;
-        padding-top: 40px;
-        
-    }
+        padding-top: 40px;        
+         }
 
         .NavLinks a {
             font-family: 'Norican', cursive;
@@ -115,19 +113,19 @@
 
          .NavLinks a:hover {
         color: black;
-    }
+        }
 
          .NavLinks p {
         margin: 2rem 1rem;
         font-size: 3vw;
         }
 
-    #mug {
-    color: gold;
-    font-size: 7vw;
-    }
+         #mug {
+         color: gold;
+         font-size: 7vw;
+         }
 
-    hr {
+         hr {
         margin: 20px 50px;
     }
 

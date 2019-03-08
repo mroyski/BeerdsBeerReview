@@ -53,7 +53,7 @@ header{
     text-align: center;
 }
 
-/*Start color-profile SideNav*/
+/*Start of SideNav*/
 .sidenav {
     display: flex;
     flex-direction: column;
@@ -76,13 +76,13 @@ header{
         padding-bottom: 1vh;
     }
 
-.NavLinks {
+    .NavLinks {
     font-family: 'Norican', cursive;
     text-decoration: none;
     font-size: 3vw;
     color: gold;
     padding-top: 40px;
-}
+    }
 
     .NavLinks a {
         font-family: 'Norican', cursive;
@@ -90,23 +90,24 @@ header{
         color: gold;
     }
 
-        .NavLinks a:hover {
+    .NavLinks a:hover {
             color: black;
-        }
+    }
 
     .NavLinks p {
         margin: 2rem 1rem;
         font-size: 3vw;
     }
 
-#mug {
+    #mug {
     color: gold;
     font-size: 7vw;
-}
+    }
 
-hr {
+    hr {
     margin: 20px 50px;
 }
+
 /*End SideNav*/
 
 .UserReviewSection {

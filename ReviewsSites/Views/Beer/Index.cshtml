@@ -12,14 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width" initial-scale=1.0 />
-    <title>Beerds</title>
+    <title>List of our Beers we Review</title>
 </head>
-
 <body>
-
-    <h1 id="beerReview">Beerds</h1>
-    <h2 id="subHead">Beer Review Hub</h2>
-
+    <header>
+        <a href="/Category/Index"><i id="mug" class="fas fa-beer"></i></a>
+        <a href="/Beer/Index">All Beers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </header>     
     <div id="mainList">
         <ul>
             @foreach (var Beer in Model)
@@ -28,9 +29,8 @@
             }
         </ul>
     </div>
-
     <div class="sidenav">
-        <i id="mug" class="fas fa-beer"></i>
+        <a href="/Category/Index"><i id="mug" class="fas fa-beer"></i></a>
         <p>Welcome to Beerds! The premiere hub of beer reviews! Choose from our list of beers to give it a rating or to learn more.</p>
         <div class="NavLinks">
             <a href="/Beer/Index">All Beers</a>
@@ -41,8 +41,8 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        &copy;2019&nbsp;&nbsp;Team 3D
+    </footer>
 </body>
-
-
 </html>
