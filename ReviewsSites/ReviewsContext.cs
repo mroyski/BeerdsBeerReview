@@ -154,7 +154,7 @@ namespace ReviewsSites
                      Brewery = "BrewMeister",
                      Rating = 5.00f,
                      Description = "In certain countries, Brewmeister's Snake Venom beer isn't actually a beer because of hits insanely high ABV. This barley beer has an incredibly high proof that makes it rival, if not exceed, many liquors out there. At around $50 per bottle, this insanely powerful beer will burn a hole in your wallet - and possibly your throat.",
-                     ImgPath = "/Images/Snake-Venom.png",
+                     ImgPath = "/Images/SnakeVenom.png",
                      CategoryId = 4
                  },
 
