@@ -125,8 +125,11 @@
 
     header {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         height: 60px;
+        background-color: white;
+        width: 100%;
         padding-top: 10px;
     }
 

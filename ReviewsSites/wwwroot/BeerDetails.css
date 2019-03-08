@@ -9,6 +9,7 @@
     background-position-y: -18rem;
     background-size: cover; 
     background-position:bottom;
+    height: 75vh;
 }
 
 header{
@@ -32,7 +33,7 @@ header{
     display: flex;    
     justify-content: center;
     align-items: center;    
-    padding-top: 10vh;   
+    padding-top: 7vh;   
 }
 
 .beerPicture img {
@@ -45,7 +46,7 @@ header{
     background-color: white;
     padding: 3rem;
     border-radius: 15px;
-    line-height: 2rem;
+    /*line-height: 2rem;*/
     display: flex;
     flex-direction: column;
     max-width: 30rem;
@@ -159,10 +160,18 @@ footer {
 }
 
 @media only screen and (max-width: 736px) {
+
+    .Background{
+        display:none
+    }
+
     header {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         height: 60px;
+        background-color: white;
+        width: 100%;
         padding-top: 10px;
     }
 
@@ -213,10 +222,14 @@ footer {
         height: 40vh;
     }
 
-    .UserReviewSection{
-        text-align: center;
+    .beerPicture img {
+        margin-left: 3rem;
+        height: 400px;
+        width: auto;
     }
 
-  
+    .UserReviewSection{
+        text-align: center;
+    } 
     
 }
