@@ -1,5 +1,4 @@
-﻿
-namespace ReviewsSites.Models
+﻿namespace ReviewsSites.Models
 {
     public class UserReview
     {
@@ -8,7 +7,5 @@ namespace ReviewsSites.Models
         public string UserText { get; set; }
 
         public int BeerId { get; set; }
-
-
     }
 }

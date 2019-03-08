@@ -3,7 +3,6 @@ using ReviewsSites.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace ReviewsSites.ReviewsRepositories
 {
     public class BeerRepository : IBeerRepository

@@ -16,7 +16,5 @@ namespace ReviewsSites.Models
         public int CategoryId { get; set; }
 
         public virtual IEnumerable<UserReview> UserReviews { get; set; }
-
-
     }
 }

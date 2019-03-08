@@ -238,7 +238,5 @@ namespace ReviewsSites
 
             base.OnModelCreating(modelBuilder);
         }
-
-
     }
 }

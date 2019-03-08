@@ -27,6 +27,7 @@ namespace ReviewsSites.Tests
 
             Assert.IsType<ViewResult>(result);
         }
+
         [Fact]
         public void Index_Model_Is_Expected_Model()
         {
@@ -38,6 +39,7 @@ namespace ReviewsSites.Tests
 
             Assert.Equal(expectedModel, model);
         }
+
         [Fact]
         public void Details_Model_Is_Expected_Model()
         {

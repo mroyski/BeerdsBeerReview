@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace ReviewsSites.Repositories
 {
     public class CategoryRepository : ICategoryRepository
@@ -23,7 +22,5 @@ namespace ReviewsSites.Repositories
         {
             return db.Categories.Single(Category => Category.CategoryId == id);
         }
-
-
     }
 }
