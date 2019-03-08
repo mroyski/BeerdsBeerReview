@@ -28,7 +28,8 @@
             <legend>Your Review</legend>
             <p>Rating</p>
             <div class="col-md-4">
-                <form asp-action="Create">
+                <form asp-action="Edit">
+                    <input type="hidden" asp-for="UserReviewId" />
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
                         <input asp-for="UserRating" class="form-control" id="ratingSelector" min="1" max="5" value="5" />

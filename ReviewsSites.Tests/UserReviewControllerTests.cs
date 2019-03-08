@@ -9,11 +9,11 @@ namespace ReviewsSites.Tests
     public class UserReviewControllerTests
     {
         UserReviewController underTest;
-        private IUserReviewRepository repo;
+        private UserReviewRepository repo;
 
         public UserReviewControllerTests()
         {
-            repo = Substitute.For<IUserReviewRepository>();
+            repo = Substitute.For<UserReviewRepository>();
 
             underTest = new UserReviewController(repo);
         }

@@ -6,9 +6,9 @@ namespace ReviewsSites.Controllers
 {
     public class UserReviewController : Controller
     {
-        IUserReviewRepository userReviewRepo;
+        UserReviewRepository userReviewRepo;
 
-        public UserReviewController(IUserReviewRepository userReviewRepo)
+        public UserReviewController(UserReviewRepository userReviewRepo)
         {
             this.userReviewRepo = userReviewRepo;
         }
@@ -45,10 +45,12 @@ namespace ReviewsSites.Controllers
         [HttpPost]
         public ActionResult Delete(UserReview userReview)
         {
+
             userReviewRepo.Delete(userReview);
-            //return RedirectToAction("Details", "Beer", new { id = userReview.BeerId });
-            return RedirectToAction("../Beer/Index/");
+            return RedirectToAction("Details", "Beer", new { id = userReview.BeerId });
+            //return RedirectToAction("../Beer/Index");
         }
+
 
         [HttpGet]
         public ViewResult Edit(int id)

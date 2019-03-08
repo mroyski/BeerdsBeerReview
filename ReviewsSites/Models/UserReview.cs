@@ -1,4 +1,6 @@
-﻿namespace ReviewsSites.Models
+﻿
+
+namespace ReviewsSites.Models
 {
     public class UserReview
     {

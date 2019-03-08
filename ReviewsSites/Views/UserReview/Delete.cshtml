@@ -36,6 +36,8 @@
             </dl>*@
             <form asp-action="Delete">
                 <input type="hidden" asp-for="UserReviewId" />
+                <input type="hidden" asp-for="BeerId" />
+
                 <input type="submit" value="Delete" class="btn btn-default" style="width: 8vw; height: 5vh; font-size: 2vw" /> |
                 @*<a asp-action="Index">Back to List</a>*@
             </form>
