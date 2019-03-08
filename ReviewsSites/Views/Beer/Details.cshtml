@@ -53,19 +53,20 @@
         <a class="leaveReview" href="/UserReview/Create/@Model.BeerId">Leave a Review</a>
 
         <h3>Here's what our users have to say...</h3>
-
-        <ul>
-            @foreach (var userReview in Model.UserReviews)
-            {
+        <div class="ReviewBox">
+            <ul>
+                @foreach (var userReview in Model.UserReviews)
+                {
                 <li>
                     @userReview.UserRating/5
                     <p>@userReview.UserText</p>
                     <a href="/UserReview/Edit/@userReview.UserReviewId">Edit Review</a>
                     <a href="/UserReview/Delete/@userReview.UserReviewId">Delete Review</a>
                 </li>
-                <hr />
-            }
-        </ul>
+                    <hr />
+                }
+            </ul>
+        </div>
     </div>
     <div class="sidenav">
         <i id="mug" class="fas fa-beer"></i>
@@ -75,8 +76,6 @@
             <hr />
             <div class="ContactInfo">
                 <a href="#about">About</a>
-                <br />
-                <br />
                 <a href="#contact">Contact</a>
             </div>
         </div>

@@ -75,7 +75,7 @@
         color: black;
         font-size: 3vh;
     }
-
+    /*Start color-profile SideNav*/
     .sidenav {
     display: flex;
     flex-direction: column;
@@ -126,6 +126,12 @@
     color: gold;
     font-size: 8vh;
     }
+
+    hr {
+        margin: 20px 50px;
+    }
+
+    /*End SideNav*/
 
     #beerReview {
     text-align: center;

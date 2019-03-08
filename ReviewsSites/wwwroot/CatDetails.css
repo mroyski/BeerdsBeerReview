@@ -51,6 +51,7 @@
         width: auto;
     }
 
+    /*Start color-profile SideNav*/
     .sidenav {
         display: flex;
         flex-direction: column;
@@ -104,7 +105,7 @@
     hr {
         margin: 20px 50px;
     }
-
+    /*End SideNav*/
 
     footer {
         padding-left: 180px;
